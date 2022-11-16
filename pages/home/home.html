@@ -11,10 +11,23 @@
     <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <title>Document</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'teaserBg': "url('https://folio.webestica.com/assets/images/about/05.jpg')",
+              'woodshape': "url('https://folio.webestica.com/assets/images/bg/pattern/05.png')"
+            }
+          }
+        }
+      }
+    </script>
+    <title>ebantoo</title>
 </head>
 <body class="overflow-x-hidden">
-    <header   class=" relative ">
+    <main class="mb-[747px] z-10 bg-white block ">
+      <header   class=" relative ">
         <div class="bckg-slider   h-screen  ">
             <div class="swiper mySwiper w-screen">
                 <div class="swiper-wrapper w-screen">
@@ -122,9 +135,9 @@
       </div>
     </section>
     <section class="mx-8 overflow-hidden mt-8 bg-black bg-cover  " >
-      <div class=" px-8 py-16 text-white">
-        <div class="grid grid-cols-1 bg-black px-16 py-32 lg:grid-cols-2 md:grid-cols-1 gap-1">
-        <img class=" h-full absolute w-11/12" src="https://folio.webestica.com/assets/images/bg/pattern/05.png" alt="">
+      <div class=" px-8 py-16 text-white relative">
+        <div class="grid grid-cols-1 bg-black before:bg-woodshape before:absolute before:w-full before:h-full px-16 py-32 lg:grid-cols-2 md:grid-cols-1 gap-1">
+        
         <div class="lg:w-10/12 space-y-6">
           <h1 class="text-7xl">our every day business</h1>
           <p class="text-sm text-gray-300">
@@ -257,7 +270,9 @@
       <section class="portfolio mx-16">
         <div class="section-titles-handler flex justify-between">
           <h1 class="text-7xl bold capitalize">Portfolio</h1>
-          <a href="#" class="underline text-lg text-black">view our work</a>
+          <div class="link-content ml-64 mt-16 relative">
+            <a href="#" class="before:content[''] before:w-3 before:absolute before:bg-black before:left-[-15px] before:top-3 before:h-1">View all services</a>
+          </div>
         </div>
         <div class="slider-handler mt-16">
           <div class="swiper mySwiper3">
@@ -433,7 +448,7 @@
         <div class="grid grid-cols-2">
           <div class="font-bold">
             <p class="text-7xl w-1/2">worked with</p>
-            <p class="text-gray-300 mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio molestias cupiditate deleniti id, consequatur modi. Placeat at aliquid ea aspernatur deleniti debitis nam natus saepe reiciendis dicta? Nihil, hic nam.</p>
+            <p class="text-gray-300 text-sm mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio molestias cupiditate deleniti id, consequatur modi. Placeat at aliquid ea aspernatur deleniti debitis nam natus saepe reiciendis dicta? Nihil, hic nam.</p>
           </div>
           <div class="grid grid-cols-5 gap-4">
             <div class="partenaire">
@@ -475,6 +490,156 @@
           </div>
         </div>
       </section>
+      <div class="teaser mx-32 mt-32">
+        <div class="grid grid-cols-2">
+          <div class="element relative">
+            <div class="backcontent h-full bg-center bg-teaserBg text-white before-content[''] before:bg-red-700 before:absolute before:h-full before:w-full before:opacity-90 z-[-1]">
+              <div class="z-20 relative flex-col h-2/3 p-24 flex text-center ">
+                 <div class=" text-5xl capitalize font-bold">
+                  our work 
+                 </div>
+                 <div class="link-content mt-8 relative">
+                  <a href="#" class="before:content['']  before:ml-28 ml-10 before:w-3 before:absolute before:bg-white  before:left-[50px] before:top-3 before:h-1">View all services</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="right-element bg-black text-white h-full w-full">
+            <div class="z-20 relative flex-col h-2/3 p-24 flex text-center ">
+              <div class=" text-5xl font-bold">
+                Have a project ?
+              </div>
+              <div class="link-content mt-8 relative">
+               <a href="#" class="before:content['']  before:ml-28 ml-10 before:w-3 before:absolute before:bg-white  before:left-[50px] before:top-3 before:h-1">
+                Get a Quote
+              </a>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="teaser2 mx-32 bg-black mt-32">
+        <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
+          <div class="right-element bg-black text-white h-full w-full">
+            <div class="z-20 relative flex-col h-2/3 p-24 flex  ">
+              <div class=" text-5xl font-bold">
+                Latest stories in your inbox
+              </div>
+           </div>
+          </div>
+          <div class="right-element bg-black text-white h-full w-full">
+            <div class="z-20 relative flex-col h-2/3 lg:py-24 py-10 px-4 flex  ">
+              <p class="desc-email text-gray-400 text-sm">
+                Building a strong brand. Distinctive, recognizable and consistent. Effective communication campaigns that activate your target group.
+              </p>
+              <form action="#" class="flex flex-wrap h-1 mt-5">
+                <div class="emailField w-2/3">
+                  <input type="email" name="" class="px-4 text-lg py-1 mt-5 w-full outline-0" id="">
+                </div>
+                <div class="submit-btn w-36 relative">
+                  <button type="submit" class="w-36 lg:mt-5 md:mt-0 mt-5 relative px-4 py-2 capitalize bg-red-700 before:content[''] text-white  before:left-7 before:top-4 before:w-3 before:absolute before:bg-white before:h-1">
+                    suscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+      <footer class="sticky text-white bottom-0 left-0 w-full bg-black px-16 py-12  !z-[-1]">
+        <div class="mx-8 grid lg:grid-cols-4 grid-cols-2 grid-cols-1 gap-4">
+          <div class="company-info">
+            <h2 class="text-4xl font-bold">
+              ebantoo
+            </h2>
+            <div class="description text-gray-400 text-sm mt-5">
+              liquid based Creative Agency Portfolio Theme.
+            </div>
+            <div class="social-link flex justify-between mt-3">
+              <p class="font-bold text-lg">Follow on:</p>
+              <a href="#" class="text-base hover:text-red-700">Fb</a>
+              <a href="#" class="text-base hover:text-red-700">Tw</a>
+              <a href="#" class="text-base hover:text-red-700">Dr</a>
+            </div>
+          </div>
+          <div class="offices">
+            <h2 class="text-xl font-bold">our offices</h2>
+            <div class="location-info text-gray-400 mb-6 mt-5">
+              <div class="city text-white mb-2">New York, USA(HQ)</div>
+              <p class=" mb-1">
+                750 sing Rd, Horseheads,14845
+              </p>
+              <div>
+                <span>Call:</span>
+                <a href="#" class=" underline">469-537-2410</a>
+                <span>(tool-ffree)</span>
+              </div>
+            </div>
+          </div>
+          <div class="usefull-links">
+            <h2 class="text-xl font-bold">
+              Usefull links
+            </h2>
+            <div class="grid mt-5 grid-cols-2 gap-3">
+              <ul class="text-gray-400 space-y-3">
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+              </ul>
+              <ul class="text-gray-400 space-y-3">
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right-element bg-black text-white">
+            <h2 class="text-xl font-bold">Stay in touch</h2>
+            <div class="element ">
+
+              <p class="desc-email text-gray-400 text-sm">
+                Subscribe to our newsletter to receive exclusive offers.
+              </p>
+              <form action="#" class="flex flex-wrap h-1">
+                <div class="emailField ">
+                  <input type="email" name="" class="px-4 text-lg py-1 mt-5  outline-0" id="">
+                </div>
+                <div class="submit-btn relative">
+                  <button type="submit" class="w-36 lg:mt-4 md:mt-0 mt-5 font-bold relative px-4 py-2 capitalize bg-red-700  text-white">
+                    suscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
   </body>
 <script src="./app.js"></script>
 </html>

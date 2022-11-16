@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'teaserBg': "url('https://folio.webestica.com/assets/images/about/05.jpg')",
+              'woodshape': "url('https://folio.webestica.com/assets/images/bg/pattern/05.png')"
+            }
+          }
+        }
+      }
+    </script>
+    <title>ebantoo</title>
+</head>
+<body>
+    <main class="relative bg-white z-10 mb-[747px]">
+
+        <section class="h-full ">
+            <div class="grid grid-cols-2">
+                <div class="left-element bg-black h-full p-32">
+                    <div class="textStroked text-white">
+                        <p class="text-6xl font-bold">Don't be shy, say hi!</p>
+                    </div>
+                    <p class="desc font-bold text-sm text-white mt-3 mb-7">Have a question, a project? we'd love to discuss...</p>
+                    <form action="#" class="formhandler">
+                        <div class="flex justify-between flew-wrap">
+                            <div class="name border-b border-gray-100">
+                                <input type="text" name="" placeholder="Name" class="border-0  focus:outline-0 bg-transparent " id="">
+                            </div>
+                            <div class="email border-b border-gray-100">
+                                <input type="email" name="" placeholder="Email" class="border-0  focus:outline-0 bg-transparent " id="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="sticky text-white bottom-0 left-0 w-full bg-black px-16 py-12  !z-[-1]">
+        <div class="mx-8 grid lg:grid-cols-4 grid-cols-2 grid-cols-1 gap-4">
+          <div class="company-info">
+            <h2 class="text-4xl font-bold">
+              ebantoo
+            </h2>
+            <div class="description text-gray-400 text-sm mt-5">
+              liquid based Creative Agency Portfolio Theme.
+            </div>
+            <div class="social-link flex justify-between mt-3">
+              <p class="font-bold text-lg">Follow on:</p>
+              <a href="#" class="text-base hover:text-red-700">Fb</a>
+              <a href="#" class="text-base hover:text-red-700">Tw</a>
+              <a href="#" class="text-base hover:text-red-700">Dr</a>
+            </div>
+          </div>
+          <div class="offices">
+            <h2 class="text-xl font-bold">our offices</h2>
+            <div class="location-info text-gray-400 mb-6 mt-5">
+              <div class="city text-white mb-2">New York, USA(HQ)</div>
+              <p class=" mb-1">
+                750 sing Rd, Horseheads,14845
+              </p>
+              <div>
+                <span>Call:</span>
+                <a href="#" class=" underline">469-537-2410</a>
+                <span>(tool-ffree)</span>
+              </div>
+            </div>
+          </div>
+          <div class="usefull-links">
+            <h2 class="text-xl font-bold">
+              Usefull links
+            </h2>
+            <div class="grid mt-5 grid-cols-2 gap-3">
+              <ul class="text-gray-400 space-y-3">
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+              </ul>
+              <ul class="text-gray-400 space-y-3">
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+                <li>
+                  <a href="#" class="capitalize hover:text-red-700"> our work</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right-element bg-black text-white">
+            <h2 class="text-xl font-bold">Stay in touch</h2>
+            <div class="element ">
+
+              <p class="desc-email text-gray-400 text-sm">
+                Subscribe to our newsletter to receive exclusive offers.
+              </p>
+              <form action="#" class="flex flex-wrap h-1">
+                <div class="emailField ">
+                  <input type="email" name="" class="px-4 text-lg py-1 mt-5  outline-0" id="">
+                </div>
+                <div class="submit-btn relative">
+                  <button type="submit" class="w-36 lg:mt-4 md:mt-0 mt-5 font-bold relative px-4 py-2 capitalize bg-red-700  text-white">
+                    suscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
