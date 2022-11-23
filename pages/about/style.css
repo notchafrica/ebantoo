@@ -1,1 +1,21 @@
 /*  */
+
+.stroke-red{
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 0.03em 0.03em 0 #ea110c;
+  }
+  .stroke-black{
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 0.03em 0.03em 0 #ea110c;
+  }
+  .stroke-transparent{
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+  }
+  .stroke-gray{
+    -webkit-text-stroke-color: #ccc;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 0.03em 0.03em 0 #ccc;
+  }

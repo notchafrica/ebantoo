@@ -1,0 +1,4 @@
+.stroke-transparent{
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+  }
