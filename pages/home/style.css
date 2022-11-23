@@ -25,7 +25,7 @@ html,
       .swiper-slide {
         font-size: 18px;
         background: #fff;
-        max-width: 100%;
+        min-width: 360px;
         /* Center slide text vertically */
         display: block;
         align-items: center;
@@ -33,20 +33,15 @@ html,
 
       .swiper-slide .card-img-handler {
         display: block;
-        max-width: 100%;
         height: 100%;
         margin-right: 12px;
         object-fit: cover;
       }
       .card-img-handler .img-handler{
         display: block;
-        max-width: 100%;
+        max-width: 100vh;
       }
-      .img-handler img{
-        min-width: 100%;
-        display: inline-block;
-        margin-right: 2rem;
-      }
+     
 
       .stroke-red{
         -webkit-text-stroke-color: white;
@@ -62,7 +57,19 @@ html,
         -webkit-text-stroke-color: rgb(0, 0, 0);
         -webkit-text-stroke-width: 1px;
       }
+      .stroke-gray{
+        -webkit-text-stroke-color: #ccc;
+        -webkit-text-stroke-width: 1px;
+        text-shadow: 0.03em 0.03em 0 #ccc;
+      }
 
       @media only screen and (max-width: 960px){
-
+        .mySwiper3 .swiper-slide{
+          width: 40px;
+        }
+      }
+      @media only screen and (max-width: 760px){
+        .card-img-handler {
+          width: 340px;
+        }
       }
