@@ -26,38 +26,38 @@
     <title>ebantoo</title>
 </head>
 <body>
-    <main class="relative mb-[747px] z-10 bg-white block ">
+    <main class="relative mb-[647px] z-10 bg-white block ">
 
-        <section class="h-full ">
-            <div class="grid grid-cols-2">
-                <div class="left-element bg-black h-full p-32">
-                    <div class=" text-6xl">
+        <section class="h-full overflow-hidden ">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
+                <div class="left-element bg-black h-full md:p-16 p-8 lg:p-32">
+                    <div class="md:text-4xl text-2xl lg:text-6xl">
                         <p class="text-transparent font-bold stroke-transparent">Don't be shy, say hi!</p>
                     </div>
                     <p class="desc font-bold text-sm text-white mt-3 mb-7">Have a question, a project? we'd love to discuss...</p>
-                    <form action="#" class="formhandler">
-                        <div class="flex justify-between flew-wrap">
-                            <div class="namehandler border-b border-gray-600">
-                                <input type="text" name="" placeholder="Name" class="border-0 outline-none focus:outline-none bg-transparent " id="">
+                    <form action="#" class="formhandler mx-3">
+                        <div class="lg:flex md:flex lg:justify-between md:justify-between flew-wrap">
+                            <div class="namehandler ">
+                                <input type="text" name="" placeholder="Name" class="border-0 w-full border-b border-gray-600 outline-none focus:outline-none bg-transparent " id="">
                             </div>
-                            <div class="email border-b border-gray-600">
-                                <input type="email" name="" placeholder="Email" class="border-0 outline-none focus:outline-none bg-transparent " id="">
+                            <div class="email ">
+                                <input type="email" name="" placeholder="Email" class="border-0 border-b w-full border-gray-600 outline-none focus:outline-none bg-transparent " id="">
                             </div>
                         </div>
-                        <div class="subject border-b border-gray-600 mt-3">
-                          <input type="text" name="" placeholder="Subject" class="border-0 w-full outline-none focus:outline-none bg-transparent " id="">
+                        <div class="subject  mt-3">
+                          <input type="text" name="" placeholder="Subject" class="border-0 border-b border-gray-600 w-full outline-none focus:outline-none bg-transparent " id="">
                       </div>
-                      <div class="textarea border-b border-gray-600 mt-3">
+                      <div class="textarea border-b h-32 lg:h-64 border-gray-600 mt-3">
                         <textarea name="" id="" cols="60" class="bg-transparent border-0" rows="10" placeholder="Message"></textarea>
                       </div>
                       <div class="submit-btn relative">
-                        <button type="submit" class="w-36 lg:mt-4 md:mt-0 mt-5 font-bold relative px-4 py-2 capitalize bg-red-700  text-white">
+                        <button type="submit" class="lg:text-xl md:text-lg text-base lg:mt-4 md:mt-0 mt-5 font-bold relative lg:px-4 md:px-3 px-2 lg:py-2 md:py-1 py-1 capitalize bg-red-700  text-white">
                           send message
                         </button>
                       </div>
                     </form>
                 </div>
-                <div class="map">
+                <div class="map ">
                   <div class="mapouter relative text-right h-full widthfull">
                     <div class="gmap_canvas overflow-hidden bg-none h-full w-full">
                       <iframe class="h-full w-full" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -69,8 +69,8 @@
                 </div>
             </div>
         </section>
-        <section class="mx-8 mt-14 pb-24">
-          <div class="grid grid-cols-4 gap-4">
+        <section class="mx-8 mt-32 py-8">
+          <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 space-y-6 gap-4">
             <div class="call-center">
               <div class="flex">
                 <div class="icon text-red-700 text-3xl">
@@ -119,8 +119,8 @@
         </section>
     </main>
     
-    <footer class="sticky text-white  w-full bg-black px-16 py-12  !z-[-1]">
-      <div class="mx-8 grid lg:grid-cols-4 grid-cols-2 grid-cols-1 gap-4">
+    <footer class="sticky text-white bottom-0 left-0 w-full h-full bg-black bg-cover md:px-8 px-4 lg:px-16 py-12  !z-[-1]">
+      <div class="mx-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
         <div class="company-info">
           <h2 class="text-4xl font-bold">
             ebantoo
@@ -190,19 +190,19 @@
             </ul>
           </div>
         </div>
-        <div class="right-element bg-black text-white">
+        <div class="right-element bg-black lg:py-6 md:py-6 py-16 text-white">
           <h2 class="text-xl font-bold">Stay in touch</h2>
           <div class="element ">
 
             <p class="desc-email text-gray-400 text-sm">
               Subscribe to our newsletter to receive exclusive offers.
             </p>
-            <form action="#" class="flex flex-wrap h-1">
+            <form action="#" class="flex bg-black flex-wrap h-1">
               <div class="emailField ">
                 <input type="email" name="" class="px-4 text-lg py-1 mt-5  outline-0" id="">
               </div>
-              <div class="submit-btn relative">
-                <button type="submit" class="w-36 lg:mt-4 md:mt-0 mt-5 font-bold relative px-4 py-2 capitalize bg-red-700  text-white">
+              <div class="submit-btn  relative">
+                <button type="submit" class="w-36  md:mt-5 mt-5 font-bold relative px-4 py-2 capitalize bg-red-700  text-white">
                   suscribe
                 </button>
               </div>
