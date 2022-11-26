@@ -1,3 +1,40 @@
+
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-active-slide{
+        width: 100%;
+      }
+      .swiper-slide {
+        font-size: 18px;
+        background: #fff;
+        min-width: 360px;
+        /* Center slide text vertically */
+        display: block;
+        align-items: center;
+      }
+      .mySwiper2 .swiper-slide {
+        font-size: 18px;
+        background: #fff;
+        min-width: 300px;
+        /* Center slide text vertically */
+        display: block;
+        align-items: center;
+      }
+
+      .swiper-slide .card-img-handler {
+        display: block;
+        height: 100%;
+        margin-right: 12px;
+        object-fit: cover;
+      }
+      .card-img-handler .img-handler{
+        display: block;
+        max-width: 100vh;
+      }
+     
 .stroke-red{
     -webkit-text-stroke-color: white;
     -webkit-text-stroke-width: 1px;
@@ -7,6 +44,11 @@
     -webkit-text-stroke-color: rgb(0, 0, 0);
     -webkit-text-stroke-width: 1px;
     text-shadow: 0.03em 0.03em 0 #ea110c;
+  }
+  .stroke-black-black{
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 0.03em 0.03em 0 #000000;
   }
   
   .stroke-black-none{
@@ -30,4 +72,15 @@
   .stroke-gray-shadowless{
     -webkit-text-stroke-color: #ccc;
     -webkit-text-stroke-width: 1px;
+  }
+
+  @media only screen and (max-width: 960px){
+    .mySwiper3 .swiper-slide{
+      width: 40px;
+    }
+  }
+  @media only screen and (max-width: 760px){
+    .card-img-handler {
+      width: 340px;
+    }
   }
