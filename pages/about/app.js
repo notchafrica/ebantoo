@@ -7,3 +7,12 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
+
+  const button = document.querySelector('#menu-button');
+  const menu = document.querySelector('#menu');
+  
+  
+  button.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    
+  });
