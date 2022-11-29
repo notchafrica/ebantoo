@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'teaserBg': "url('https://folio.webestica.com/assets/images/about/05.jpg')",
+              'woodshape': "url('https://folio.webestica.com/assets/images/bg/pattern/05.png')",
+              'eventBg': "url('https://genhq.com/wp-content/uploads/2020/07/blog_Virtual-Keynote-Preview-noplay.jpg')"
+            }
+          }
+        }
+      }
+    </script>
+    <title>ebantoo</title>
+</head>
+<body class="overflow-x-hidden">
+    <main class=" mb-[747px] overflow-hidden z-10 bg-white block ">
+      <header   class=" relative ">
+        <nav
+        class="
+        z-50
+        relative
+          flex flex-wrap
+          items-center
+          justify-between
+          w-full
+          py-4
+          md:py-0
+          px-8
+          text-lg 
+          bg-white
+        "
+      >
+       <div>
+          <a href="#" class="link-home font-bold text-3xl">
+            <b class="text-red-600">E</b>bantoo
+          </a>
+        </div>
+       
+         <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="menu-button"
+            class="h-6 w-6 cursor-pointer md:hidden block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+       
+       <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+          <ul
+            class="
+              pt-4
+              text-base text-gray-700
+              md:flex
+              md:justify-between 
+              md:pt-0"
+          >
+            <li>
+              <a class="md:p-4 py-2 block hover:text-red-600" href="../home/home.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-red-600" href="./services.html"
+                >Service</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-red-600" href="../about/about.html"
+                >About</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-red-600" href="../contact/contact.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-red-600" href="../event/index.html"
+                >Event</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-red-600" href="../artist/index.html"
+                >Artist</a
+              >
+            </li>
+          </ul>
+        </div>
+        
+        <div class="quote lg:block md:block hidden">
+          <a href="#" class="px-4 py-2 text-white bg-red-600 font-bold capitalize">get quote</a>
+        </div>
+    </nav>
+        <div class="bckg-slider   h-screen  ">
+            <div class="swiper mySwiper w-screen">
+                <div class="swiper-wrapper w-screen">
+                  <div class="swiper-slide bg-cover bg-teaserBg">
+                    <div class="description text-white absolute lg:top-32 md:top-24 top-16 z-10 lg:mx-32 md:mx-24 mx-14">
+                      <h5 class="lg:text-xl md:text-lg text-base">Folio digital agency</h5>
+                      <h1 class="lg:mt-20 capitalize md:mt-10 mt-5 lg:text-7xl md:text-5xl text-4xl font-bold">
+                        <div class="text-transparent lg:text-9xl md:text-7xl text-6xl stroke-red ">event </div>
+                        <span>Manager</span>
+                      </h1>
+                      <p class="mt-5 lg:mb-12 md:mb-6 mb-3 lg:text-xl md:text-lg text-base">
+                        We transform your perception into an excellent website
+                      </p>
+                      <a href="#" class="bg-red-600 lg:p-3 md:p-2 p-2 md:text-base text-sm lg:text-lg capitalize"> organize an event</a>
+                    </div>
+                    <div class="shape-pipa h-screen bg-black opacity-60 w-screen absolute">
+
+                    </div>
+                    
+                  </div>
+                </div>
+                
+                <div class="swiper-pagination hidden"></div>
+                <div class="relative z-10  bottom-32 lg:flex space-x-6 text-white  hidden left-16">
+                  <div class="rod-button-prev text-white border-white border-2 p-6 rounded-full">
+                      <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                        
+                  </div>
+                    <div class="rod-button-next  text-white p-6 border-2 border-white rounded-full ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                          </svg>
+                          
+                    </div>
+                
+                </div>
+                
+              </div>
+              <div class="social-link md:space-x-4 space-x-2 lg:space-x-8 absolute bottom-96 md:left-[-5rem] left-[-4rem] lg:left-[-5rem] rotate-90 z-10 text-white">
+                <a href="#" class="lg:text-lg md:text-base text-sm capitalize">dribble</a>
+                <a href="#" class="lg:text-lg md:text-base text-sm capitalize">twitter</a>
+                <a href="#" class="lg:text-lg md:text-base text-sm capitalize">Facebook</a>
+              </div>
+              
+        </div>
+       
+    </header>
+    <section class="event_speakers lg:mx-16 md:mx-16 mx-8 py-8 mt-32">
+        <div class="section_title">
+            <h1 class="font-bold text-5xl ">
+                Event Speaker
+            </h1>
+        </div>
+        <div class="grid grid-cols-1 mt-32   ">
+            <div class="single_speaker flex justify-center">
+                <div class="img_handler">
+                    <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" class="w-72 h-72 " alt="">
+                </div>
+                <div class="speaker_info ml-16 mt-8">
+                    <div class="speaker_name font-bold">
+                        Khumar prashtam
+                    </div>
+                    <div class="speaker_role mt-2">
+                        Community Manager
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="topics lg:mx-16 md:mx-16 mx-8 py-8 mt-16">
+        <div class="section-title">
+            <h1 class="title capitalize font-bold text-5xl">Topic to discuss about</h1>
+        </div>
+        <div class="grid  grid-cols-1  mt-16">
+            <div class="single-topic  p-8">
+                <a href="#">
+                    <h2 class="topics_title font-bold text-2xl">Tech crunch disrupt 😂</h2>
+                    <p class="text-base mt-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil exercitationem atque nobis! Esse consequuntur quasi neque sed. Modi, nobis dolorum reprehenderit ratione, impedit reiciendis fugiat esse nesciunt ad quos accusamus?
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="event_info">
+            <div class="date text-xl">
+              <b class="text-base">When:</b>  Monday 6th December
+            </div>
+            <div class="hour">
+              <b>time:</b>  8am - 5pm
+            </div>
+            <div class="location">
+               <b>where:</b> Bourj Khalifa hotel
+            </div>
+        </div>
+        
+    </section>
+</main>
+<footer class="sticky text-white bottom-0 left-0 w-full h-full bg-black bg-cover md:px-8 px-4 lg:px-16 py-12  !z-[-1]">
+  <div class="mx-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+    <div class="company-info">
+      <h2 class="text-4xl font-bold">
+        ebantoo
+      </h2>
+      <div class="description text-gray-400 text-sm mt-5">
+        liquid based Creative Agency Portfolio Theme.
+      </div>
+      <div class="social-link flex justify-between mt-3">
+        <p class="font-bold text-lg">Follow on:</p>
+        <a href="#" class="text-base hover:text-red-700">Fb</a>
+        <a href="#" class="text-base hover:text-red-700">Tw</a>
+        <a href="#" class="text-base hover:text-red-700">Dr</a>
+      </div>
+    </div>
+    <div class="offices">
+      <h2 class="text-xl font-bold">our offices</h2>
+      <div class="location-info text-gray-400 mb-6 mt-5">
+        <div class="city text-white mb-2">New York, USA(HQ)</div>
+        <p class=" mb-1">
+          750 sing Rd, Horseheads,14845
+        </p>
+        <div>
+          <span>Call:</span>
+          <a href="#" class=" underline">469-537-2410</a>
+          <span>(tool-ffree)</span>
+        </div>
+      </div>
+    </div>
+    <div class="usefull-links">
+      <h2 class="text-xl font-bold">
+        Usefull links
+      </h2>
+      <div class="grid mt-5 grid-cols-2 gap-3">
+        <ul class="text-gray-400 space-y-3">
+          <li>
+            <a href="#" class="capitalize hover:text-red-700"> our work</a>
+          </li>
+          <li>
+            <a href="#" class="capitalize hover:text-red-700"> our work</a>
+          </li>
+          <li>
+            <a href="#" class="capitalize hover:text-red-700"> our work</a>
+          </li>
+          <li>
+            <a href="#" class="capitalize hover:text-red-700"> our work</a>
+          </li>
+          <li>
+            <a href="#" class="capitalize hover:text-red-700"> our work</a>
+          </li>
+        </ul>
+        <ul class="text-gray-400 space-y-3">
+          <li>
+            <a href="#" class="capitalize hover:text-red-700"> our work</a>
+          </li>
+          <li>
+            <a href="#" class="capitalize hover:text-red-700"> our work</a>
+          </li>
+          <li>
+            <a href="#" class="capitalize hover:text-red-700"> our work</a>
+          </li>
+          <li>
+            <a href="#" class="capitalize hover:text-red-700"> our work</a>
+          </li>
+          <li>
+            <a href="#" class="capitalize hover:text-red-700"> our work</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="right-element bg-black lg:py-6 md:py-6 py-16 text-white">
+      <h2 class="text-xl font-bold">Stay in touch</h2>
+      <div class="element ">
+
+        <p class="desc-email text-gray-400 text-sm">
+          Subscribe to our newsletter to receive exclusive offers.
+        </p>
+        <form action="#" class="flex bg-black flex-wrap h-1">
+          <div class="emailField ">
+            <input type="email" name="" class="px-4 text-lg py-1 mt-5  outline-0" id="">
+          </div>
+          <div class="submit-btn  relative">
+            <button type="submit" class="w-36  md:mt-5 mt-5 font-bold relative px-4 py-2 capitalize bg-red-700  text-white">
+              suscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+<script src="./app.js"></script>
+</html>
