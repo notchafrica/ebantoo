@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  
+  <meta name="theme-color" content="#FF8E12">
+  <link rel="shortcut icon" href="../assets/cropped-Logo-Escale-Bantoo-2-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'teaserBg': "url('https://folio.webestica.com/assets/images/about/05.jpg')",
+              'woodshape': "url('https://folio.webestica.com/assets/images/bg/pattern/05.png')"
+            },
+            colors: {
+              'eb': '#FF8E12'
+            }
+          }
+        }
+      }
+    </script>
+    <title>ebantoo</title>
+</head>
+<body>
+    <main class="relative mb-[47px] z-10 bg-white block ">
+      <nav
+      class="
+      z-50
+      relative
+        flex flex-wrap
+        items-center
+        justify-between
+        w-full
+        py-4
+        md:py-0
+        px-8
+        text-lg 
+        bg-white
+      "
+    >
+     <div>
+        <a href="#" class="link-home font-bold text-3xl">
+          <img src="../assets/cropped-Logo-Escale-Bantoo-2-1.png" class="w-16" alt="">
+        </a>
+      </div>
+     
+       <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="menu-button"
+          class="h-6 w-6 cursor-pointer md:hidden block"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+     
+     <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+        <ul
+          class="
+            pt-4
+            text-base text-gray-700
+            md:flex
+            md:justify-between 
+            md:pt-0"
+        >
+          <li>
+            <a class="md:p-4 py-2 block hover:text-eb" href="../index.html"
+              >Acceuil</a
+            >
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-eb" href="../services/services.html"
+              >Service</a
+            >
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-eb" href="../about/about.html"
+              >A propos</a>
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-eb" href="./contact.html"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-eb" href="../event/index.html"
+              >Evenement</a
+            >
+          </li>
+          <li>
+            <a class="md:p-4 py-2 block hover:text-eb" href="../artist/index.html"
+              >Artiste</a
+            >
+          </li>
+        </ul>
+      </div>
+      
+      <div class="quote lg:block md:block hidden">
+        <a href="#" class="px-4 py-2 text-white bg-eb font-bold capitalize">offres</a>
+      </div>
+  </nav>
+        <section class="h-full overflow-hidden ">
+            <div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
+                <div class="left-element bg-black h-full md:p-16 p-8 lg:p-32">
+                    <div class="md:text-4xl text-2xl lg:text-6xl">
+                        <p class="text-transparent font-bold stroke-transparent">Dites nous bonjour</p>
+                    </div>
+                    <p class="desc font-bold text-sm text-white mt-3 mb-7">vous avez un projet?, nous serons ravi d'en discuter</p>
+                    <form action="#" class="formhandler mx-3">
+                        <div class="lg:flex md:flex lg:justify-between md:justify-between flew-wrap">
+                            <div class="namehandler ">
+                                <input type="text" name="" placeholder="Nom" class="border-0  w-full border-b border-gray-600 outline-none focus:outline-none bg-transparent " id="">
+                            </div>
+                            <div class="email ">
+                                <input type="email" name="" placeholder="Email" class="border-0 lg:ml-8 md:ml-8 border-b w-full border-gray-600 outline-none focus:outline-none bg-transparent " id="">
+                            </div>
+                        </div>
+                        <div class="subject  mt-3">
+                          <input type="text" name="" placeholder="Sujet" class="border-0  border-b border-gray-600 w-full outline-none focus:outline-none bg-transparent " id="">
+                      </div>
+                      <div class="textarea border-b h-32 lg:h-64 border-gray-600 mt-3">
+                        <textarea name="" id="" cols="60" class="bg-transparent border-0 " rows="10" placeholder="Message"></textarea>
+                      </div>
+                      <div class="submit-btn relative">
+                        <button type="submit" class="lg:text-xl md:text-lg text-base lg:mt-4 md:mt-0 lg:mt-5 md:mt-6 mt-5 font-bold relative lg:px-4 md:px-3 px-2 lg:py-2 md:py-1 py-1 capitalize bg-eb  text-white">
+                          Message
+                        </button>
+                      </div>
+                    </form>
+                </div>
+                <div class="map ">
+                  <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=yaounde&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">how to add a google map to html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+                </div>
+            </div>
+        </section>
+        <section class="mx-8 mt-32 py-8">
+          <div class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 lg:space-y-0 space-y-6 gap-4">
+            <div class="call-center">
+              <div class="flex">
+                <div class="icon text-eb text-3xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M13 23q-.425 0-.712-.288Q12 22.425 12 22t.288-.712Q12.575 21 13 21h6v-1h-2q-.825 0-1.412-.587Q15 18.825 15 18v-4q0-.825.588-1.413Q16.175 12 17 12h2v-1q0-2.9-2.05-4.95Q14.9 4 12 4Q9.1 4 7.05 6.05Q5 8.1 5 11v1h2q.825 0 1.412.587Q9 13.175 9 14v4q0 .825-.588 1.413Q7.825 20 7 20H5q-.825 0-1.413-.587Q3 18.825 3 18v-7q0-1.85.712-3.488q.713-1.637 1.938-2.862t2.862-1.938Q10.15 2 12 2t3.488.712q1.637.713 2.862 1.938t1.938 2.862Q21 9.15 21 11v10q0 .825-.587 1.413Q19.825 23 19 23Z"/></svg>
+                </div>
+                <a href="#" class="element hover:text-eb font-bold text-lg ml-5"> +237 656 30 57 17 / 691 86 97 97</a>
+              </div>
+              <p class="text-gray-400 text-sm mt-5">
+                Contactez nous sur ce numero
+              </p>
+            </div>
+            <div class="call-center">
+              <div class="flex">
+                <div class="icon text-eb text-3xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144l-2.494.654l.666-2.433l-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931a6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646c-.182-.065-.315-.099-.445.099c-.133.197-.513.646-.627.775c-.114.133-.232.148-.43.05c-.197-.1-.836-.308-1.592-.985c-.59-.525-.985-1.175-1.103-1.372c-.114-.198-.011-.304.088-.403c.087-.088.197-.232.296-.346c.1-.114.133-.198.198-.33c.065-.134.034-.248-.015-.347c-.05-.099-.445-1.076-.612-1.47c-.16-.389-.323-.335-.445-.34c-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654c0 .977.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992c.47.205.84.326 1.129.418c.475.152.904.129 1.246.08c.38-.058 1.171-.48 1.338-.943c.164-.464.164-.86.114-.943c-.049-.084-.182-.133-.38-.232z"/></svg>
+                </div>
+                <a href="#" class="element hover:text-eb font-bold text-lg ml-5">  +237 676 08 24 48 / 657 55 16 24</a>
+              </div>
+              <p class="text-gray-400 text-sm mt-5">
+                Contactez nous sur ce numero
+              </p>
+            </div>
+            <div class="skype">
+              <div class="flex">
+                <div class="icon text-eb text-3xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v12H5.17L4 17.17V4m0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H4zm2 10h12v2H6v-2zm0-3h12v2H6V9zm0-3h12v2H6V6z"/></svg>
+                </div>
+                <a href="#" class="element hover:text-eb font-bold text-lg ml-5"> infos@escalebantoo.com</a>
+              </div>
+              <p class="text-gray-400 text-sm mt-5">
+                notre adresse electronique
+              </p>
+            </div>
+            <div class="mail">
+              <div class="flex">
+                <div class="icon text-eb text-3xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 14H5c-.55 0-1-.45-1-1V8l6.94 4.34c.65.41 1.47.41 2.12 0L20 8v9c0 .55-.45 1-1 1zm-7-7L4 6h16l-8 5z"/></svg>
+                </div>
+                <a href="#" class="element hover:text-eb font-bold text-lg ml-5"> escalebantoo@gmail.com</a>
+              </div>
+              <p class="text-gray-400 text-sm mt-5">
+                notre adresse electronique
+              </p>
+            </div>
+            <div class="career">
+              <div class="flex">
+                <div class="icon text-eb text-3xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M15 4a4 4 0 0 0-4 4a4 4 0 0 0 4 4a4 4 0 0 0 4-4a4 4 0 0 0-4-4m0 1.9a2.1 2.1 0 1 1 0 4.2A2.1 2.1 0 0 1 12.9 8A2.1 2.1 0 0 1 15 5.9M4 7v3H1v2h3v3h2v-3h3v-2H6V7H4m11 6c-2.67 0-8 1.33-8 4v3h16v-3c0-2.67-5.33-4-8-4m0 1.9c2.97 0 6.1 1.46 6.1 2.1v1.1H8.9V17c0-.64 3.1-2.1 6.1-2.1Z"/></svg>
+                </div>
+                <a href="#" class="element hover:text-eb font-bold text-lg ml-5">ebenenscène@yahoo.fr</a>
+              </div>
+              <p class="text-gray-400 text-sm mt-5">
+                notre adresse electronique
+              </p>
+            </div>
+          </div>
+        </section>
+    </main>
+    
+    <footer class=" text-white bottom-0 left-0 w-full h-full bg-black bg-cover md:px-8 px-4 lg:px-16 py-12  ">
+      <div class="mx-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+        <div class="company-info">
+          <img src="../assets/cropped-Logo-Escale-Bantoo-2-1.png" alt="">
+          <div class="description text-gray-400 text-sm mt-5">
+            liquid based Creative Agency Portfolio Theme.
+          </div>
+          <div class="social-link flex justify-between mt-3">
+            <p class="font-bold text-lg">Follow on:</p>
+            <a href="#" class="text-base hover:text-eb">Fb</a>
+            <a href="#" class="text-base hover:text-eb">Tw</a>
+            <a href="#" class="text-base hover:text-eb">Dr</a>
+          </div>
+        </div>
+        <div class="offices">
+          <h2 class="text-xl font-bold">our offices</h2>
+          <div class="location-info text-gray-400 mb-6 mt-5">
+            <div class="city text-white mb-2">Yaounde , Cameroun</div>
+            <p class=" mb-1">
+              750 sing Rd, Horseheads,14845
+            </p>
+            <div>
+              <span>Telephone</span>
+              <a href="#" class=" underline">+237 656 30 57 10</a>
+            </div>
+            
+            <div>
+              <span>Whatsapp</span>
+              <a href="#" class=" underline">+237 657 55 16 24</a>
+            </div>
+          </div>
+        </div>
+        <div class="usefull-links">
+          <h2 class="text-xl font-bold">
+            Usefull links
+          </h2>
+          <div class="grid mt-5 grid-cols-2 gap-3">
+            <ul class="text-gray-400 space-y-3">
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+            </ul>
+            <ul class="text-gray-400 space-y-3">
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-element bg-black lg:py-6 md:py-6 py-16 text-white">
+          <h2 class="text-xl font-bold">Stay in touch</h2>
+          <div class="element ">
+    
+            <p class="desc-email text-gray-400 text-sm">
+              Subscribe to our newsletter to receive exclusive offers.
+            </p>
+            <form action="#" class="flex bg-black flex-wrap h-1">
+              <div class="emailField ">
+                <input type="email" name="" class="px-4 text-lg py-1 text-black mt-5  outline-0" id="">
+              </div>
+              <div class="submit-btn  relative">
+                <button type="submit" class="w-36  md:mt-5 mt-5 font-bold relative px-4 py-2 capitalize bg-eb  text-white">
+                  suscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <meta name="theme-color" content="#FF8E12">
+  <link rel="shortcut icon" href="./assets/cropped-Logo-Escale-Bantoo-2-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'teaserBg': "url('./assets/AFA.jpg')",
+              'woodshape': "url('https://folio.webestica.com/assets/images/bg/pattern/05.png')"
+            },
+            colors: {
+              'eb': '#FF8E12'
+            }
+          }
+        }
+      }
+    </script>
+    <title>ebantoo</title>
+</head>
+<body class="overflow-x-hidden">
+    <main class=" mb-[47px] overflow-hidden !z-20 bg-white block ">
+      <header   class=" relative ">
+        <nav
+        class="
+        z-50
+        relative
+          flex flex-wrap
+          items-center
+          justify-between
+          w-full
+          py-4
+          md:py-0
+          px-8
+          text-lg 
+          bg-white
+        "
+      >
+       <div>
+          <a href="#" class="link-home font-bold text-3xl">
+            <img src="./assets/cropped-Logo-Escale-Bantoo-2-1.png" class="w-16" alt="">
+          </a>
+        </div>
+       
+         <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="menu-button"
+            class="h-6 w-6 cursor-pointer md:hidden block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+       
+       <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+          <ul
+            class="
+              pt-4
+              text-base text-gray-700
+              md:flex
+              md:justify-between 
+              md:pt-0"
+          >
+            <li>
+              <a class="md:p-4 py-2 block hover:text-eb" href="./index.html"
+                >Acceuil</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-eb" href="./services/services.html"
+                >Service</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-eb" href="./about/about.html"
+                >A propos</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-eb" href="./contact/contact.html"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-eb" href="./event/index.html"
+                >Evenement</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-eb" href="./artist/index.html"
+                >Artiste</a
+              >
+            </li>
+          </ul>
+        </div>
+        
+        <div class="quote lg:block md:block hidden">
+          <a href="#" class="px-4 py-2 text-white bg-eb font-bold capitalize">offres</a>
+        </div>
+    </nav>
+        <div class="bckg-slider   h-screen  ">
+            <div class="swiper mySwiper w-screen">
+                <div class="swiper-wrapper w-screen">
+                  <div class="swiper-slide bg-cover bg-teaserBg">
+                    <div class="description text-white absolute lg:top-8 md:top-24 top-16 z-10 lg:mx-32 md:mx-24 mx-14">
+                      <h5 class="lg:text-xl md:text-lg text-base">Escale Bantoo</h5>
+                      <h1 class="lg:mt-10 md:mt-10 mt-5 lg:text-7xl md:text-5xl text-4xl font-bold">
+                        <div class="text-transparent lg:text-9xl md:text-7xl text-6xl stroke-red ">Escale </div>
+                        <span>Musique</span>
+                      </h1>
+                      <p class="mt-5 lg:mb-12 md:mb-6 mb-3 lg:text-xl md:text-lg text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aperiam minima, saepe minus sed delectus?
+                      </p>
+                      <a href="#" class="bg-eb lg:p-3 md:p-2 p-2 md:text-base text-sm lg:text-lg ">Decouvrir</a>
+                    </div>
+                    <div class="shape-pipa h-screen bg-black opacity-60 w-screen absolute">
+
+                    </div>
+                    
+                  </div>
+                  <div class="swiper-slide bg-cover bg-teaserBg">
+                    <div class="description text-white absolute lg:top-8 md:top-24 top-16 z-10 lg:mx-32 md:mx-24 mx-14">
+                      <h5 class="lg:text-xl md:text-lg text-base">Escale bantoo</h5>
+                      <h1 class="lg:mt-10 md:mt-10 mt-5 lg:text-7xl md:text-5xl text-4xl font-bold">
+                        <div class="text-transparent lg:text-9xl md:text-7xl text-6xl stroke-red ">Salon de l'escale</div>
+                        <span>Bantoo</span>
+                      </h1>
+                      <p class="mt-5 lg:mb-12 md:mb-6 mb-3 lg:text-xl md:text-lg text-base">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est excepturi, iste beatae praesentium veniam quo.
+                      </p>
+                      <a href="#" class="bg-eb lg:p-3 md:p-2 p-2 md:text-base text-sm lg:text-lg "> Decouvrir</a>
+                    </div>
+                    <div class="shape-pipa h-screen bg-black opacity-60 w-screen absolute">
+
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                
+                <div class="swiper-pagination hidden"></div>
+                <div class="relative z-10  bottom-32 lg:flex space-x-6 text-white  hidden left-16">
+                  <div class="rod-button-prev text-white border-white border-2 p-6 rounded-full">
+                      <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                        
+                  </div>
+                    <div class="rod-button-next  text-white p-6 border-2 border-white rounded-full ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                          </svg>
+                          
+                    </div>
+                
+                </div>
+                
+              </div>
+              <div class="social-link md:space-x-4 space-x-2 lg:space-x-8 absolute bottom-96 md:left-[-5rem] left-[-4rem] lg:left-[-5rem] rotate-90 z-10 text-white">
+                <a href="#" class="lg:text-lg md:text-base text-sm capitalize">dribble</a>
+                <a href="#" class="lg:text-lg md:text-base text-sm capitalize">twitter</a>
+                <a href="#" class="lg:text-lg md:text-base text-sm capitalize">Facebook</a>
+              </div>
+              
+        </div>
+       
+    </header>
+    <section class="marketing-strategie relative lg:mx-20 md:mx-10 mx-5 mt-8">
+      <div class="grid lg:grid-cols-2 grid-cols-1">
+        <div class="space-y-6">
+          <h1 class="lg:text-7xl md:text-5xl text-3xl  text-black font-bold">Apercu general d'Ebantoo</h1>
+          <p class="short-desc text-sm text-gray-400">
+            Scène d’Ébène intervient depuis une vingtaine d’années dans le secteur des arts de la scène (Musique et théâtre), à travers la formation aux métiers du spectacle vivant, la Promotion et la diffusion de la spectacle, le Booking, l’Edition musical, le Conseils et l’ingénierie culturelle.
+          </p>
+        </div>
+        <div class="simple-shape hidden lg:block relative">
+          <figure class=" right-0 top-0 m-4 absolute">
+            <svg width="148" height="140"  fill="none" stroke="black" viewBox="0 0 148 140" xmlns="http://www.w3.org/2000/svg">
+              <path class="svg-custom-border-dark" d="m9.95 131.41c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <circle class="svg-custom-border-dark" cx="25.86" cy="131.41" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="44.71" cy="131.41" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="63.57" cy="131.41" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="82.43" cy="131.41" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="101.29" cy="131.41" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="120.14" cy="131.41" r="2.95"></circle>
+              <path class="svg-custom-border-dark" d="m141.95 131.41c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m9.95 113.61c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <circle class="svg-custom-border-dark" cx="25.86" cy="113.61" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="44.71" cy="113.61" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="63.57" cy="113.61" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="82.43" cy="113.61" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="101.29" cy="113.61" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="120.14" cy="113.61" r="2.95"></circle>
+              <path class="svg-custom-border-dark" d="m141.95 113.61c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m9.95 95.81c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <circle class="svg-custom-border-dark" cx="25.86" cy="95.81" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="44.71" cy="95.81" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="63.57" cy="95.81" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="82.43" cy="95.81" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="101.29" cy="95.81" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="120.14" cy="95.81" r="2.95"></circle>
+              <path class="svg-custom-border-dark" d="m141.95 95.81c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m9.95 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m28.8 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m47.66 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m66.52 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m85.37 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.64 0.01 2.95 1.33 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m104.23 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m123.09 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m141.95 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m9.95 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m28.8 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m47.66 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m66.52 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m85.37 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.64 0 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m104.23 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m123.09 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m141.95 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m9.95 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m28.8 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m47.66 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m66.52 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m85.37 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.64 0 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m104.23 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m123.09 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m141.95 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m9.95 24.62c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <circle class="svg-custom-border-dark" cx="25.86" cy="24.62" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="44.71" cy="24.62" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="63.57" cy="24.62" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="82.43" cy="24.62" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="101.29" cy="24.62" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="120.14" cy="24.62" r="2.95"></circle>
+              <path class="svg-custom-border-dark" d="m141.95 24.62c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z"></path>
+              <path class="svg-custom-border-dark" d="m9.95 6.82c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95c0-1.62 1.32-2.94 2.95-2.94s2.95 1.32 2.95 2.94z"></path>
+              <circle class="svg-custom-border-dark" cx="25.86" cy="6.82" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="44.71" cy="6.82" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="63.57" cy="6.82" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="82.43" cy="6.82" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="101.29" cy="6.82" r="2.95"></circle>
+              <circle class="svg-custom-border-dark" cx="120.14" cy="6.82" r="2.95"></circle>
+              <path class="svg-custom-border-dark" d="m141.95 6.82c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z"></path>
+            </svg>
+          </figure>
+        </div>
+      </div>
+      <div class="flex  mt-6">
+        <div class="shape hidden lg:block absolute bottom-16 left-0  h-full">
+          
+        <figure class="absolute  bottom-0 mb-6 ms-6 d-none lg:block">
+          <svg width="214" height="172" fill="" viewBox="0 0 358 287" xmlns="http://www.w3.org/2000/svg">
+          <ellipse class="fill-eb" transform="matrix(.9961 -.0884 .0884 .9961 -9.9064 21.268)" cx="235.25" cy="122.52" rx="120.04" ry="120.04"></ellipse>
+            <defs> <ellipse id="round-bg" transform="matrix(.7071 -.7071 .7071 .7071 -91.988 129.49)" cx="110.31" cy="175.78" rx="109" ry="109"></ellipse> </defs>
+            <clipPath id="lines"><use xlink:href="#round-bg"></use></clipPath>
+            <g clip-path="url(#lines)">
+              <path class="fill-dark" d="m-64.69 132.76c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.77-2.29 10.17-4.89 15.48-1.42z"></path>
+            </g>
+            <g clip-path="url(#lines)">
+              <path class="fill-dark" d="m-79.96 156.09c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.88-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.76-2.28 10.17-4.88 15.47-1.41z"></path>
+            </g>
+            <g clip-path="url(#lines)">
+              <path class="fill-dark" d="m-49.1 108.94c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.76-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.77-2.29 10.18-4.9 15.48-1.42z"></path>
+            </g>
+            <g clip-path="url(#lines)">
+              <path class="fill-dark" d="m-32.99 84.32c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.88-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.76-2.28 10.17-4.88 15.47-1.41z"></path>
+            </g>
+            <g clip-path="url(#lines)">
+              <path class="fill-dark" d="m-1.61 36.38c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.88-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.45-5.08-9.44-4.89-14.73 0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.76-2.3 10.16-4.9 15.47-1.43z"></path>
+            </g>
+            <g clip-path="url(#lines)">
+              <path class="fill-dark" d="m-16.88 59.71c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.77-2.27 10.17-4.88 15.48-1.4z"></path>
+            </g>
+            <g clip-path="url(#lines)">
+              <path class="fill-dark" d="m13.98 12.56c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.76-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48-3.53-2.31-7.36-0.47-11.79 1.67-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.77-2.29 10.17-4.9 15.48-1.42z"></path>
+            </g>
+            <g clip-path="url(#lines)">
+              <path class="fill-dark" d="m30.09-12.06c5.31 3.47 5.08 9.47 4.89 14.76-0.18 4.92-0.34 9.16 3.19 11.48 3.53 2.31 7.36 0.47 11.79-1.67 4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43s5.08 9.47 4.89 14.76c-0.18 4.92-0.34 9.16 3.19 11.47s7.36 0.47 11.79-1.67c4.77-2.3 10.17-4.9 15.48-1.43 5.3 3.47 5.08 9.47 4.88 14.75-0.18 4.92-0.34 9.16 3.19 11.47l-2.06 3.14c-5.3-3.47-5.08-9.47-4.88-14.76 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43-5.3-3.47-5.08-9.47-4.88-14.75 0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.47s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43s-5.08-9.47-4.89-14.76c0.18-4.92 0.34-9.16-3.19-11.48s-7.36-0.47-11.79 1.67c-4.77 2.3-10.17 4.9-15.48 1.43l2.06-3.14c3.53 2.31 7.36 0.47 11.8-1.67 4.77-2.28 10.17-4.88 15.48-1.41z"></path>
+            </g>
+          </svg>
+        </figure>
+        </div>
+        <div class="grid lg:space-x-32 md:space-x-16 space-x-8 md:grid-cols-2 grid-cols-1 lg:grid-cols-4 gap-4">
+          <div class="service-empyt"></div>
+          <div class="service space-y-6">
+            <h1 class="text-9xl  stroke-black text-transparent hover:text-black duration-1000">E</h1>
+            <h3 class="text-2xl font-bold">Escale Musique</h3>
+            <ul class="sevices space-y-3 ">
+              <li class="hover:text-eb"><a href="#">Branding</a></li>
+              <li class="hover:text-eb"><a href="#">Art Direction</a></li>
+              <li class="hover:text-eb"><a href="#">Visual Design</a></li>
+              <li class="hover:text-eb"><a href="#">illustration & iconography</a></li>
+              <li class="hover:text-eb"><a href="#">Content / video</a></li>
+            </ul>
+          </div>
+          
+          <div class="service space-y-6">
+            <h1 class="text-9xl  stroke-black text-transparent hover:text-black duration-1000">S</h1>
+            <h3 class="text-2xl font-bold">Salon de l'Escale Bantoo</h3>
+            <ul class="sevices space-y-3 ">
+              <li class="hover:text-eb"><a href="#">Branding</a></li>
+              <li class="hover:text-eb"><a href="#">Art Direction</a></li>
+              <li class="hover:text-eb"><a href="#">Visual Design</a></li>
+              <li class="hover:text-eb"><a href="#">illustration & iconography</a></li>
+              <li class="hover:text-eb"><a href="#">Content / video</a></li>
+            </ul>
+          </div>
+          <div class="service space-y-6">
+            <h1 class="text-9xl  stroke-black text-transparent hover:text-black duration-1000">B</h1>
+            <h3 class="text-2xl font-bold ">Bantoo Musique Business training Bub</h3>
+            <ul class="sevices space-y-3 ">
+              <li class="hover:text-eb"><a href="#">Branding</a></li>
+              <li class="hover:text-eb"><a href="#">Art Direction</a></li>
+              <li class="hover:text-eb"><a href="#">Visual Design</a></li>
+              <li class="hover:text-eb"><a href="#">illustration & iconography</a></li>
+              <li class="hover:text-eb"><a href="#">Content / video</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <div class="link-content mt-16 relative">
+        <a href="#servives" class="before:content[''] before:w-3 before:absolute before:bg-black before:left-[-15px] before:top-3 before:h-1">Voir les services</a>
+      </div>
+    </section>
+    <section id="services" class="lg:mx-8 md:mx-4 mx-2 overflow-hidden mt-8 bg-black bg-cover  " >
+      <div class=" lg:px-8 md:px-4 px-2 lg:py-16 md:py-8 py-4 text-white relative">
+        <div class="grid bg-black before:bg-woodshape before:absolute before:w-full before:h-full lg:px-16 md:px-8 px-4 lg:py-32 md:py-16 py-8 lg:grid-cols-2 md:grid-cols-1 gap-1">
+        
+        <div class="lg:w-10/12 lg:space-y-6 md:space-y-3 space-y-3 md:space-x-3 space-x-2">
+          <h1 class="lg:text-7xl md:text-5xl text-3xl">Nos Services</h1>
+          <p class="text-sm text-gray-300">
+            Building a strong brand. Distinctive, recognizable and consistent. Effective communication campaigns that activate your target group.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-8">
+          <div class="element mt-8">
+            <div class="icon text-eb">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 9V7c0-1.65-1.35-3-3-3h-4c-.77 0-1.47.3-2 .78c-.53-.48-1.23-.78-2-.78H6C4.35 4 3 5.35 3 7v2c-1.65 0-3 1.35-3 3v5c0 1.65 1.35 3 3 3v2h2v-2h14v2h2v-2c1.65 0 3-1.35 3-3v-5c0-1.65-1.35-3-3-3m-7-3h4c.55 0 1 .45 1 1v2.78c-.61.55-1 1.34-1 2.22v2h-5V7c0-.55.45-1 1-1M5 7c0-.55.45-1 1-1h4c.55 0 1 .45 1 1v7H6v-2c0-.88-.39-1.67-1-2.22V7m17 10c0 .55-.45 1-1 1H3c-.55 0-1-.45-1-1v-5c0-.55.45-1 1-1s1 .45 1 1v4h16v-4c0-.55.45-1 1-1s1 .45 1 1v5Z"/></svg>
+            </div>
+            <h3 class="font-bold mt-5 text-lg capitalize">Salon de l'Escale Bantoo</h3>
+            <p class="text-sm text-gray-400">
+              Le salon international des voix de femmes
+            </p>
+          </div>
+          <div class="element mt-8">
+            <div class="icon text-eb">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M854.4 800.9c.2-.3.5-.6.7-.9C920.6 722.1 960 621.7 960 512s-39.4-210.1-104.8-288c-.2-.3-.5-.5-.7-.8c-1.1-1.3-2.1-2.5-3.2-3.7c-.4-.5-.8-.9-1.2-1.4l-4.1-4.7l-.1-.1c-1.5-1.7-3.1-3.4-4.6-5.1l-.1-.1c-3.2-3.4-6.4-6.8-9.7-10.1l-.1-.1l-4.8-4.8l-.3-.3c-1.5-1.5-3-2.9-4.5-4.3c-.5-.5-1-1-1.6-1.5c-1-1-2-1.9-3-2.8c-.3-.3-.7-.6-1-1C736.4 109.2 629.5 64 512 64s-224.4 45.2-304.3 119.2c-.3.3-.7.6-1 1c-1 .9-2 1.9-3 2.9c-.5.5-1 1-1.6 1.5c-1.5 1.4-3 2.9-4.5 4.3l-.3.3l-4.8 4.8l-.1.1c-3.3 3.3-6.5 6.7-9.7 10.1l-.1.1c-1.6 1.7-3.1 3.4-4.6 5.1l-.1.1c-1.4 1.5-2.8 3.1-4.1 4.7c-.4.5-.8.9-1.2 1.4c-1.1 1.2-2.1 2.5-3.2 3.7c-.2.3-.5.5-.7.8C103.4 301.9 64 402.3 64 512s39.4 210.1 104.8 288c.2.3.5.6.7.9l3.1 3.7c.4.5.8.9 1.2 1.4l4.1 4.7c0 .1.1.1.1.2c1.5 1.7 3 3.4 4.6 5l.1.1c3.2 3.4 6.4 6.8 9.6 10.1l.1.1c1.6 1.6 3.1 3.2 4.7 4.7l.3.3c3.3 3.3 6.7 6.5 10.1 9.6c80.1 74 187 119.2 304.5 119.2s224.4-45.2 304.3-119.2a300 300 0 0 0 10-9.6l.3-.3c1.6-1.6 3.2-3.1 4.7-4.7l.1-.1c3.3-3.3 6.5-6.7 9.6-10.1l.1-.1c1.5-1.7 3.1-3.3 4.6-5c0-.1.1-.1.1-.2c1.4-1.5 2.8-3.1 4.1-4.7c.4-.5.8-.9 1.2-1.4a99 99 0 0 0 3.3-3.7zm4.1-142.6c-13.8 32.6-32 62.8-54.2 90.2a444.07 444.07 0 0 0-81.5-55.9c11.6-46.9 18.8-98.4 20.7-152.6H887c-3 40.9-12.6 80.6-28.5 118.3zM887 484H743.5c-1.9-54.2-9.1-105.7-20.7-152.6c29.3-15.6 56.6-34.4 81.5-55.9A373.86 373.86 0 0 1 887 484zM658.3 165.5c39.7 16.8 75.8 40 107.6 69.2a394.72 394.72 0 0 1-59.4 41.8c-15.7-45-35.8-84.1-59.2-115.4c3.7 1.4 7.4 2.9 11 4.4zm-90.6 700.6c-9.2 7.2-18.4 12.7-27.7 16.4V697a389.1 389.1 0 0 1 115.7 26.2c-8.3 24.6-17.9 47.3-29 67.8c-17.4 32.4-37.8 58.3-59 75.1zm59-633.1c11 20.6 20.7 43.3 29 67.8A389.1 389.1 0 0 1 540 327V141.6c9.2 3.7 18.5 9.1 27.7 16.4c21.2 16.7 41.6 42.6 59 75zM540 640.9V540h147.5c-1.6 44.2-7.1 87.1-16.3 127.8l-.3 1.2A445.02 445.02 0 0 0 540 640.9zm0-156.9V383.1c45.8-2.8 89.8-12.5 130.9-28.1l.3 1.2c9.2 40.7 14.7 83.5 16.3 127.8H540zm-56 56v100.9c-45.8 2.8-89.8 12.5-130.9 28.1l-.3-1.2c-9.2-40.7-14.7-83.5-16.3-127.8H484zm-147.5-56c1.6-44.2 7.1-87.1 16.3-127.8l.3-1.2c41.1 15.6 85 25.3 130.9 28.1V484H336.5zM484 697v185.4c-9.2-3.7-18.5-9.1-27.7-16.4c-21.2-16.7-41.7-42.7-59.1-75.1c-11-20.6-20.7-43.3-29-67.8c37.2-14.6 75.9-23.3 115.8-26.1zm0-370a389.1 389.1 0 0 1-115.7-26.2c8.3-24.6 17.9-47.3 29-67.8c17.4-32.4 37.8-58.4 59.1-75.1c9.2-7.2 18.4-12.7 27.7-16.4V327zM365.7 165.5c3.7-1.5 7.3-3 11-4.4c-23.4 31.3-43.5 70.4-59.2 115.4c-21-12-40.9-26-59.4-41.8c31.8-29.2 67.9-52.4 107.6-69.2zM165.5 365.7c13.8-32.6 32-62.8 54.2-90.2c24.9 21.5 52.2 40.3 81.5 55.9c-11.6 46.9-18.8 98.4-20.7 152.6H137c3-40.9 12.6-80.6 28.5-118.3zM137 540h143.5c1.9 54.2 9.1 105.7 20.7 152.6a444.07 444.07 0 0 0-81.5 55.9A373.86 373.86 0 0 1 137 540zm228.7 318.5c-39.7-16.8-75.8-40-107.6-69.2c18.5-15.8 38.4-29.7 59.4-41.8c15.7 45 35.8 84.1 59.2 115.4c-3.7-1.4-7.4-2.9-11-4.4zm292.6 0c-3.7 1.5-7.3 3-11 4.4c23.4-31.3 43.5-70.4 59.2-115.4c21 12 40.9 26 59.4 41.8a373.81 373.81 0 0 1-107.6 69.2z"/></svg>
+            </div>
+            <h3 class="font-bold mt-5 text-lg capitalize">L'Escale Bantoo Global Music Hub</h3>
+            <p class="text-sm text-gray-400">
+              Action d'appui a la professionnalisation des artistes
+            </p>
+          </div>
+          
+          <div class="element mt-8">
+            <div class="icon text-eb">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m11 13l3-8h-2.5L15 12.5L13.5 8H5v2h3v6h2v-6h1.77L14 16h2Z"/></svg>
+            </div>
+            <h3 class="font-bold mt-5 text-lg capitalize">L'Escale Music</h3>
+            <p class="text-sm text-gray-400">
+              le programme TV
+            </p>
+          </div>
+          
+          <div class="element mt-8">
+            <div class="icon text-eb">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M11 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m0 7c1.1 0 2.66.23 4.11.69c-.61.38-1.11.91-1.5 1.54c-.82-.2-1.72-.33-2.61-.33c-2.97 0-6.1 1.46-6.1 2.1v1.1h8.14c.09.7.34 1.34.72 1.9H3v-3c0-2.66 5.33-4 8-4m7.5-3H22v2h-2v5.5a2.5 2.5 0 0 1-2.5 2.5a2.5 2.5 0 0 1-2.5-2.5a2.5 2.5 0 0 1 2.5-2.5c.36 0 .69.07 1 .21V10Z"/></svg>
+            </div>
+            <h3 class="font-bold mt-5 text-lg capitalize">L'Escale Bantoo Music Business Training</h3>
+            <p class="text-sm text-gray-400">
+              le Programme de formation
+              L'organisation dont les actions ont rayonnement international s'est, au fil des ans, construit un puissant réseau de relations dans les circuits professionnels internationaux de la musique, du théâtre et des médias.
+            </p>
+          </div>
+          
+          
+        </div>
+      </div> 
+
+      </div>
+      </section>
+      <section class="testimony lg:mx-32 md:mx-16 mx-5 before:relative mt-16">
+        <div class="text-center capitalize stroke-transparent text-transparent lg:text-7xl md:text-5xl text-3xl">
+          testimonials
+        </div>
+        <div class="lg:mx-16 md:mx-8 mx-0 relative">
+          <div class="swiper mySwiper2 h-96 mt-5">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide ">
+                <div class="lg:mt-32 md:mt-16 mt-8 relative block">
+                  <div class="flex justify-center text-center"> 
+                  <div class="img-handler h-16 w-16 ">
+                    <img src="https://folio.webestica.com/assets/images/avatar/01.jpg" class="rounded-full h-15 w-15" alt="">
+                  </div>
+                  </div>
+                  <div class=" text-9xl relative flex mt-22 justify-center text-gray-300 icon-handler">
+                    <i class="absolute z-[-1] opacity-40">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054c.062-.372.166-.703.31-.992c.145-.29.331-.517.559-.683c.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992a4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054c.062-.372.166-.703.31-.992c.145-.29.331-.517.559-.683c.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992a4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/></svg>
+                    </i>
+                  </div>
+                  <p class="testimony mt-2 lg:mx-24 md:mx-12 mx-6 text-center lg:text-lg md:text-base text-sm text-gray-500">
+                    The good gathering doesn't bearing day Stars over Open behold May male tree replenish don't blessed beast days earth fifth let multiply and he every blessed to upon behold grass divided brought was that dry I Were image waters own bring light subdue Meat
+                  </p>
+                  <p class="font-bold capitalize lg:text-base md:text-sm text-xs text-center mt-5">adam ross</p>
+                  <p class="text-gray-300 lg:text-base md:text-sm text-xs text-center">software developper</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class=" flex justify-between lg:block hidden visible">     
+              <div class="swiper-button-next after:hidden rounded-full block text-gray-400 border-2 border-gray-400 px-2 py-1 w-14 h-14">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </div>
+              <div class="swiper-button-prev  after:hidden rounded-full block text-gray-400 border-2 border-gray-400 px-2 py-1 w-14 h-14">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio mt-32 lg:mx-16 md:mx-8 mx-4">
+        <div class="section-titles-handler flex justify-between">
+          <h1 class="lg:text-7xl md:text-5xl text-3xl bold capitalize stroke-transparent text-transparent">Portfolio</h1>
+          <div class="link-content ml-64 lg:mt-16 md:mt-8 mt-4 relative">
+            <a href="#services" class="before:content[''] relative before:w-3 before:absolute before:bg-black before:left-[-15px] before:top-3 inline-block before:h-1">Voir les services</a>
+          </div>
+        </div>
+        <div class="slider-handler  mt-16">
+          <div class="swiper mySwiper3">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide">
+                <div class="card-img-handler  relative">
+                  <div class="img-handler relative block hover:duration-1000 overflow-hidden h-1/2">
+                    <img src="./assets/Tony Mefe_4913.jpg" class=" duration-1000 hover:scale-105  absolute  h-full" alt="">
+                  <!-- <div class=" z-10 text-white flex px-6 py-4 relative w-full">
+                    <i class="text-4xl">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm10 0h8v8h-8z"/></svg>
+                    </i>  
+                    <p class="capitalize md:text-2xl text-xl lg:text-4xl lg:ml-3 md:ml-2 ml-1 lg:mr-28 md:mr-14 mr-7">microsoft</p>
+                  </div> -->
+                  <div class="mt-64 z-[2] px-3 py-4 ">
+                    <a href="#" class=" text-white bottom-2 absolute">
+                      <p class="font-bold text-xl">missing link</p>
+                      <p class="text-sm">
+                        coordonnateur
+                      </p>
+                    </a>
+                  </div>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img-handler  relative">
+                  <div class="img-handler relative block hover:duration-1000 overflow-hidden h-1/2">
+                    <img src="./assets//AFA.jpg" class=" duration-1000 hover:scale-105  absolute h-full" alt="">
+                  <!-- <div class=" z-10 text-white flex px-6 py-4 relative w-full">
+                    <i class="text-4xl">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm10 0h8v8h-8z"/></svg>
+                    </i>  
+                    <p class="capitalize md:text-2xl text-xl lg:text-4xl lg:ml-3 md:ml-2 ml-1 lg:mr-28 md:mr-14 mr-7">microsoft</p>
+                  </div> -->
+                  <div class="mt-64 z-[2] px-3 py-4 ">
+                    <a href="#" class=" text-white bottom-2 absolute">
+                      <p class="font-bold text-xl">missing link</p>
+                      <p class="text-sm">
+                        coordonnateur
+                      </p>
+                    </a>
+                  </div>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card-img-handler  relative">
+                  <div class="img-handler relative block hover:duration-1000 overflow-hidden h-1/2">
+                    <img src="./assets/cropped-Logo-Escale-Bantoo-2-1.png" class=" duration-1000 hover:scale-105  absolute  h-full" alt="">
+                  <!-- <div class=" z-10 text-white flex px-6 py-4 relative w-full">
+                    <i class="text-4xl">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm10 0h8v8h-8z"/></svg>
+                    </i>  
+                    <p class="capitalize md:text-2xl text-xl lg:text-4xl lg:ml-3 md:ml-2 ml-1 lg:mr-28 md:mr-14 mr-7">microsoft</p>
+                  </div> -->
+                  <div class="mt-64 z-[2] px-3 py-4 ">
+                    <a href="#" class=" text-white bottom-2 absolute">
+                      <p class="font-bold text-xl">missing link</p>
+                      <p class="text-sm">
+                        coordonnateur
+                      </p>
+                    </a>
+                  </div>
+                  
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      <section class="analytic mt-32 lg:mx-28 md:mx-14 mx-7">
+        <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-5">
+          <div class="service">
+            <div class="head-title flex">
+              <span class="text-4xl stroke-gray text-transparent">01</span>
+              <h2 class="text-xl  ml-1 font-bold">
+                Le salon de l'escale Bantoo
+              </h2>
+            </div>
+            <div class="mt-8">
+              le salon international des voix de femmes
+            </div>
+            <div class="mt-5">
+              <img src="./assets/cropped-Logo-Escale-Bantoo-2-1.png" alt="">
+            </div>
+          </div>
+          <div class="service">
+            <div class="head-title flex">
+              <span class="text-4xl stroke-gray text-transparent">02</span>
+              <h2 class="text-xl  ml-1 font-bold">
+                l'Escale Bantoo Global Music Hub
+              </h2>
+            </div>
+            <div class="mt-8">
+              Actions d'appui a la professionnalisation des artistes
+            </div>
+            <div class="mt-5">
+              <img src="./assets/cropped-Logo-Escale-Bantoo-2-1.png" alt="">
+            </div>
+          </div>
+          <div class="service">
+            <div class="head-title flex">
+              <span class="text-4xl stroke-gray text-transparent">03</span>
+              <h2 class="text-xl w-1/2 ml-1 font-bold">
+                L'Escale Music
+              </h2>
+            </div>
+            <div class="mt-8">
+              Le Programme Tv
+            </div>
+            <div class="mt-5">
+              <img src="./assets/cropped-Logo-Escale-Bantoo-2-1.png" alt="">
+            </div>
+          </div>
+          
+          <div class="service">
+                <div class="head-title flex">
+              <span class="text-4xl stroke-gray text-transparent">04</span>
+              <h2 class="text-xl  ml-1 font-bold">
+                L'Escale Bantoo Music Training
+              </h2>
+            </div>
+            <div class="mt-8">
+              le Programme de formation
+              L'organisation dont les actions ont rayonnement international s'est, au fil des ans, construit un puissant réseau de relations dans les circuits professionnels internationaux de la musique, du théâtre et des médias.
+            </div>
+            <div class="mt-5">
+              <img src="./assets/cropped-Logo-Escale-Bantoo-2-1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="partenaire lg:mx-28 md:mx-14 mx-7 mt-32">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <div class="">
+            <p class="lg:text-7xl font-bold md:text-5xl text-3xl lgw-1/2">worked with</p>
+            <p class="text-gray-300 text-xs lg:text-sm mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio molestias cupiditate deleniti id, consequatur modi. Placeat at aliquid ea aspernatur deleniti debitis nam natus saepe reiciendis dicta? Nihil, hic nam.</p>
+          </div>
+          <div class="grid lg:grid-cols-5 md:grid-cols-4 grid-cols-3 lg:mt-0 mt-7 gap-4">
+            <div class="partenaire">
+              <img src="https://folio.webestica.com/assets/images/clients/colored/01.svg" alt="">
+            </div>
+            <div class="partenaire">
+              <img src="https://folio.webestica.com/assets/images/clients/colored/01.svg" alt="">
+            </div>
+            <div class="partenaire">
+              <img src="https://folio.webestica.com/assets/images/clients/colored/01.svg" alt="">
+            </div>
+            <div class="partenaire">
+              <img src="https://folio.webestica.com/assets/images/clients/colored/01.svg" alt="">
+            </div>
+            <div class="partenaire">
+              <img src="https://folio.webestica.com/assets/images/clients/colored/01.svg" alt="">
+            </div>
+            <div class="partenaire">
+              <img src="https://folio.webestica.com/assets/images/clients/colored/01.svg" alt="">
+            </div>
+            <div class="partenaire">
+              <img src="https://folio.webestica.com/assets/images/clients/colored/01.svg" alt="">
+            </div>
+            <div class="partenaire">
+              <img src="https://folio.webestica.com/assets/images/clients/colored/01.svg" alt="">
+            </div>
+            <div class="partenaire">
+              <img src="https://folio.webestica.com/assets/images/clients/colored/01.svg" alt="">
+            </div>
+            <div class="partenaire">
+              <img src="https://folio.webestica.com/assets/images/clients/colored/01.svg" alt="">
+            </div>
+            <div class="partenaire">
+              <img src="https://folio.webestica.com/assets/images/clients/colored/01.svg" alt="">
+            </div>
+            <div class="partenaire">
+              <img src="https://folio.webestica.com/assets/images/clients/colored/01.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="teaser lg:mx-32 md:mx-16 mx-6 mt-32">
+        <div class="lg:grid grid-cols-2 grid-cols-1 ">
+          <div class="element relative ">
+            <div class="backcontent h-full bg-center bg-teaserBg text-white before-content[''] before:bg-eb before:absolute before:h-full before:w-full before:opacity-90 z-[-1]">
+              <div class="z-20 relative flex-col h-2/3 lg:p-24 md:p-12 p-6 flex text-center ">
+                 <div class="stroke-white text-transparent text-5xl  capitalize font-bold">
+                  our work 
+                 </div>
+                 <div class="link-content mt-8  relative flex">
+                  <a href="#services" class="before:content[''] before:ml-28 lg:ml-10 md:ml-3 ml-2 before:w-3 before:absolute before:bg-white  before:left-70 before:top-3 before:h-1">
+                    <div class="relative  inline-block">Voir les services</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+          <div class="right-element bg-black text-white h-full w-full">
+            <div class="z-20 relative flex-col h-2/3 lg:p-24 md:p-12 p-6 flex text-center ">
+              <div class="md:text-3xl text-2xl lg:text-5xl font-bold">
+                Have a project ?
+              </div>
+              <div class="link-content mt-8 relative">
+               <a href="#" class="before:content['']  before:hidden lg:block before:ml-28 ml-10 before:w-3 before:absolute before:bg-white  before:left-[50px] before:top-3 before:h-1">
+                <div class="relative block! important">Get a Quote</div>
+              </a>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="teaser2 lg:mx-32 md:mx-16 mx-6 bg-black mt-32">
+        <div class="grid lg:grid-cols-2 grid-cols-1 bg-black h-full w-full ">
+          <div class="right-element  text-white ">
+            <div class="z-20 relative flex-col h-2/3 lg:p-24 md:p-12 p-6 flex  ">
+              <div class=" lg:text-5xl md:text-4xl text-3xl font-bold">
+                Latest stories in your inbox
+              </div>
+           </div>
+          </div>
+          <div class="right-element bg-black text-white h-full w-full">
+            <div class="z-20 relative flex-col h-full lg:h-2/3 lg:py-24 py-10 px-4 flex  ">
+              <p class="desc-email text-gray-400 text-sm">
+                Building a strong brand. Distinctive, recognizable and consistent. Effective communication campaigns that activate your target group.
+              </p>
+              <form action="#" class="flex flex-wrap  mt-5">
+                <div class="emailField w-2/3">
+                  <input type="email" name="" class="px-4 text-lg py-1 mt-5 w-full outline-0" id="">
+                </div>
+                <div class="submit-btn w-36 relative mt-5">
+                  <button type="submit" class="w-36 lg:mt-0 md:mt-0 mt-0 relative px-4 py-2 capitalize bg-eb before:content[''] text-white  before:left-7 before:top-4 before:w-3 before:absolute before:bg-white before:h-1">
+                    suscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-white bottom-0 left-0 w-full h-full bg-black bg-cover md:px-8 px-4 lg:px-16 py-12  ">
+      <div class="mx-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+        <div class="company-info">
+          <img src="./assets/cropped-Logo-Escale-Bantoo-2-1.png" alt="">
+          <div class="description text-gray-400 text-sm mt-5">
+            liquid based Creative Agency Portfolio Theme.
+          </div>
+          <div class="social-link flex justify-between mt-3">
+            <p class="font-bold text-lg">Follow on:</p>
+            <a href="#" class="text-base hover:text-eb">Fb</a>
+            <a href="#" class="text-base hover:text-eb">Tw</a>
+            <a href="#" class="text-base hover:text-eb">Dr</a>
+          </div>
+        </div>
+        <div class="offices">
+          <h2 class="text-xl font-bold">our offices</h2>
+          <div class="location-info text-gray-400 mb-6 mt-5">
+            <div class="city text-white mb-2">Yaounde , Cameroun</div>
+            <p class=" mb-1">
+              750 sing Rd, Horseheads,14845
+            </p>
+            <div>
+              <span>Telephone</span>
+              <a href="#" class=" underline">+237 656 30 57 10</a>
+            </div>
+            
+            <div>
+              <span>Whatsapp</span>
+              <a href="#" class=" underline">+237 657 55 16 24</a>
+            </div>
+          </div>
+        </div>
+        <div class="usefull-links">
+          <h2 class="text-xl font-bold">
+            Usefull links
+          </h2>
+          <div class="grid mt-5 grid-cols-2 gap-3">
+            <ul class="text-gray-400 space-y-3">
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+            </ul>
+            <ul class="text-gray-400 space-y-3">
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+              <li>
+                <a href="#" class="capitalize hover:text-eb"> our work</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-element bg-black lg:py-6 md:py-6 py-16 text-white">
+          <h2 class="text-xl font-bold">Stay in touch</h2>
+          <div class="element ">
+    
+            <p class="desc-email text-gray-400 text-sm">
+              Subscribe to our newsletter to receive exclusive offers.
+            </p>
+            <form action="#" class="flex bg-black flex-wrap h-1">
+              <div class="emailField ">
+                <input type="email" name="" class="px-4 text-lg py-1 text-black mt-5  outline-0" id="">
+              </div>
+              <div class="submit-btn  relative">
+                <button type="submit" class="w-36  md:mt-5 mt-5 font-bold relative px-4 py-2 capitalize bg-eb  text-white">
+                  suscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+<script src="./app.js"></script>
+</html>
