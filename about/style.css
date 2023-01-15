@@ -1,4 +1,6 @@
-
+:root{
+  --swiper-theme-color: #FF8E12;
+}
 .swiper {
         width: 100%;
         height: 100%;
