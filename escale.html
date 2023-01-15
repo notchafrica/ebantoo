@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <meta name="theme-color" content="#FF8E12">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="../assets/cropped-Logo-Escale-Bantoo-2-1.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundImage: {
+            'teaserBg': "url('https://folio.webestica.com/assets/images/about/05.jpg')",
+            'woodshape': "url('https://folio.webestica.com/assets/images/bg/pattern/05.png')"
+          },
+          colors: {
+            'eb': '#FF8E12',
+            'second': '#3f2312',
+          }
+        }
+      }
+    }
+  </script>
+  <title>ebantoo</title>
+</head>
+
+<body>
+  <main class="mb-[47px] z-10 overflow-hidden bg-white block">
+    <header class="relative block">
+      <nav class="
+        z-50
+        relative
+          flex flex-wrap
+          items-center
+          justify-between
+          w-full
+          py-4
+          md:py-0
+          px-8
+          text-lg 
+          bg-white
+        ">
+        <div>
+          <a href="#" class="link-home font-bold text-3xl">
+            <img src="../assets/cropped-Logo-Escale-Bantoo-2-1.png" class="h-16" alt="">
+          </a>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+        <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+          <ul class="
+              pt-4
+              text-base text-gray-700
+              md:flex
+              md:justify-between 
+              md:pt-0">
+            <li>
+              <a class="md:p-4 py-2 block hover:text-eb" href="./index.html">Acceuil</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-eb" href="./services.html">Service</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-eb" href="./about.html">A propos</a>
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-eb" href="./contact.html">Contact</a>
+            </li>
+            <!-- <li>
+              <a class="md:p-4 py-2 block hover:text-eb" href="../event/index.html"
+                >Evenement</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-eb" href="../artist/index.html"
+                >Artiste</a
+              >
+            </li> -->
+          </ul>
+        </div>
+
+        <div class="quote lg:block md:block hidden">
+          <a href="#" class="px-4 py-2 text-white bg-eb font-bold capitalize">offres</a>
+        </div>
+      </nav>
+      <div class="lg:absolute relative left-0 grid grid-cols-1 z-50 lg:w-2/5 md:w-3/5 w-full">
+        <div class="hero_text  lg:text-7xl md:text-6xl text-5xl font-bold lg:mx-14 md:mx-7 mx-4 my-20">
+          <div class="hero_title z-10 ">
+            <div class="stroke-black  leading-12 text-transparent">
+              L’escale bantoo:
+            </div>
+            <p class="text-black">
+              Le programme escale Bantoo
+            </p>
+          </div>
+          <div class="mt-8">
+            <a href="./contact.html"
+              class="bg-second text-white lg:text-base md:text-sm text-xs lg:px-3 md:px-2 px-1  lg:py-2 py-1 md:py-1">Nous
+              contacter</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid hidden lg:block md:hidden relative ml-32  grid-cols-1 ">
+        <div class="hero__img_bg ">
+          <div class="grid grid-cols-2 ml-64">
+            <div class="center-img ">
+              <img src="https://folio.webestica.com/assets/images/about/03.jpg" class="" alt="">
+            </div>
+            <div class="overlay_img">
+              <div class="right_img mt-32 ml-[-15px] w-48">
+                <img src="https://folio.webestica.com/assets/images/about/04.jpg" alt="">
+              </div>
+              <div class="absolute z-20 top-10 right-0">
+                <figure class="">
+                  <svg width="285" class="" fill="none" stroke="#FF8E12" height="82" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 285 82">
+                    <path
+                      d="m9.63 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0.01-4.82-2.15-4.82-4.81s2.16-4.81 4.81-4.81c2.66 0 4.82 2.15 4.82 4.81z">
+                    </path>
+                    <path
+                      d="m35.25 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m60.88 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m86.5 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m112.12 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m137.75 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m163.37 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m188.99 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m214.62 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m240.24 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m9.63 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0.01-4.82-2.15-4.82-4.81s2.16-4.81 4.81-4.81c2.66 0 4.82 2.16 4.82 4.81z">
+                    </path>
+                    <path
+                      d="m35.25 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.16 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m60.88 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.16 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m86.5 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.16 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m112.12 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.16 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m137.75 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.16 4.81 4.81z">
+                    </path>
+                    <circle cx="158.56" cy="30.38" r="4.81"></circle>
+                    <circle cx="184.18" cy="30.38" r="4.81"></circle>
+                    <circle cx="209.8" cy="30.38" r="4.81"></circle>
+                    <circle cx="235.43" cy="30.38" r="4.81"></circle>
+                    <path
+                      d="m9.63 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.82-2.16-4.82-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66-0.01 4.82 2.15 4.82 4.81z">
+                    </path>
+                    <path
+                      d="m35.25 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66-0.01 4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m60.88 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.65-0.01 4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m86.5 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.65-0.01 4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m112.12 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66-0.01 4.81 2.15 4.81 4.81z">
+                    </path>
+                    <path
+                      d="m137.75 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.65-0.01 4.81 2.15 4.81 4.81z">
+                    </path>
+                    <circle cx="158.56" cy="55.94" r="4.81"></circle>
+                    <circle cx="184.18" cy="55.94" r="4.81"></circle>
+                    <circle cx="209.8" cy="55.94" r="4.81"></circle>
+                    <circle cx="235.43" cy="55.94" r="4.81"></circle>
+                  </svg>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="services lg:mx-16 md:mx-8 mx-4  lg:p-12 md:p-6 p-3 bg-gray-100 lg:mt-32 md:mt-16 mt-8">
+      <div class="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1  gap-4">
+        <div class="service_title lg:w-2/3 md:w-ful space-y-4">
+          <h2 class="font-bold lg:text-5xl md:text-4xl text-3xl text-second">Concept et objectif</h2>
+          <p class="lg:text-xl text-lg">
+            Scène d’ébène construit, depuis août 2016, un projet musical dont l’ambition est d’accroître la présence des
+            artistes de la sous-région sur la scène professionnelle internationale des musiques du monde.
+          </p>
+          <p class="lg:text-xl text-lg">
+            A l’origine des différentes déclinaisons du Programme Escale Bantoo, le Programme Fame, qui a été imaginé
+            par l’équipe de Scène d’Ébène pour accompagner la professionnalisation des jeunes chanteuses d’Afrique
+            centrale et développer la présence des artistes de la sous-région sur la scène internationale.
+          </p>
+        </div>
+        <div class="service_elements flex lg:mt-0 mt-8 w-full grid gap-4 grid-cols-1">
+          <p class="lg:text-xl text-lg">
+            A travers la formation, l’appui aux jeunes artistes et opérateurs culturels africains, la diffusion de
+            spectacle, la production de programme TV et la médiation, le Programme propose des solutions au déficit de
+            professionnalisation et de structuration du secteur musical en Afrique centrale, à la valorisation et à la
+            promotion des jeunes chanteuses africaines.
+          </p>
+          <p class="lg:text-xl text-lg">
+            En 5 ans, le Programme a un bel actif qui s’est construit autour de 4 grands axes:
+          </p>
+          <ul class="space-y-8">
+            <li class="flex my-1">
+              <i class="icn  font-bold bg-second rounded-full p-2 h-8 w-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-4 h-4 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+
+              </i>
+              <span class="ml-3 text-lg w-2/3">Le Salon de l’Escale Bantoo, le salon international des voix de
+                femmes</span>
+            </li>
+            <li class="flex my-1">
+              <i class="icn  font-bold bg-second rounded-full p-2 h-8 w-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-4 h-4 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+
+              </i>
+              <span class="ml-3 text-lg w-2/3">L’Escale Bantoo Global Music Hub, actions d’appui à la
+                professionnalisation des artistes</span>
+            </li>
+            <li class="flex my-1">
+              <i class="icn  font-bold bg-second rounded-full p-2 h-8 w-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-4 h-4 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+
+              </i>
+              <span class="ml-3 text-lg w-2/3">L’Escale Music, le Programme TV</span>
+            </li>
+            <li class="flex my-1">
+              <i class="icn  font-bold bg-second rounded-full p-2 h-8 w-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-4 h-4 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+
+              </i>
+              <span class="ml-3 text-lg w-2/3">L’Escale Bantoo Music Business Training, le Programme de formation</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="py-12 bg-black sm:py-16 lg:py-20 xl:py-24 mt-20">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div class="grid grid-cols-1 gap-y-12 lg:grid-cols-7 lg:gap-x-20">
+          <div class="lg:col-span-3 lg:order-last">
+            <div class="relative overflow-hidden">
+              <img class="object-cover w-full h-full"
+                src="https://landingfoliocom.imgix.net/store/collection/dusk/images/features/11/woman.png" alt="" />
+              <div class="absolute bottom-0 left-0">
+                <a href="#" title="" class="inline-flex items-center px-5 py-3 text-base font-normal bg-black"
+                  role="button">
+                  <svg class="w-auto h-5 ml-2" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 3.75L16.25 9M16.25 9L11 14.25M16.25 9L2.75 9" stroke="url(#paint0_linear_523_1470)"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <defs>
+                      <linearGradient id="paint0_linear_523_1470" x1="2.75" y1="3.75" x2="17.6868" y2="6.52979"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#6DDCFF" />
+                        <stop offset="1" stop-color="#7F60F9" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4">
+            <h2 class="text-3xl font-normal text-white sm:text-4xl lg:text-5xl xl:text-6xl">Un impact sur les artistes
+            </h2>
+            <p class="mt-8 text-lg font-normal text-gray-400">
+              Avec notre Catalogue de 11 chanteuses du Cameroun, Tchad, Congo, RDC, nous avons permis à certaines de ces
+              chanteuses de monter les premières marches de leurs carrières internationale :
+            </p>
+
+            <hr class="mt-8 border-gray-800 sm:mt-12" />
+
+            <ul class="grid grid-cols-1 mt-8 sm:grid-cols-2 sm:mt-12 gap-x-12 gap-y-8 sm:gap-y-12">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 13L9 17L19 7" stroke="url(#paint0_linear_515_2603)" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <defs>
+                    <linearGradient id="paint0_linear_515_2603" x1="5" y1="7" x2="20.3943" y2="10.1196"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#6DDCFF" />
+                      <stop offset="1" stop-color="#7F60F9" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span class="ml-4 text-lg font-normal text-white">
+                  3 Finalistes aux 8ème jeux de la francophonie d’Abidjan 2017
+                  <ol>
+                    <li>Géneviève Matibye (Tchad), </li>
+                    <li>Lornoar – (Cameroun) </li>
+                    <li>Fanie Fayar(Congo) médaille d’or de l’édition (Fanie Fayar)</li>
+                  </ol>
+                </span>
+              </li>
+
+              <li class="flex items-start">
+                <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 13L9 17L19 7" stroke="url(#paint0_linear_515_2603)" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <defs>
+                    <linearGradient id="paint0_linear_515_2603" x1="5" y1="7" x2="20.3943" y2="10.1196"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#6DDCFF" />
+                      <stop offset="1" stop-color="#7F60F9" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span class="ml-4 text-lg font-normal text-white">1 Finaliste Prix RFI 2017 <br>
+                  <ol>
+                    <li>Pamela Badjogo(Gabon), </li>
+                  </ol>
+                </span>
+              </li>
+
+              <li class="flex items-start">
+                <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 13L9 17L19 7" stroke="url(#paint0_linear_515_2603)" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <defs>
+                    <linearGradient id="paint0_linear_515_2603" x1="5" y1="7" x2="20.3943" y2="10.1196"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#6DDCFF" />
+                      <stop offset="1" stop-color="#7F60F9" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span class="ml-4 text-lg font-normal text-white">3 sélections officielles au Marché des arts du
+                  spectacle d’Abidjan 2016 et 2018 <br>
+                  <ol>
+                    <li>Collectif HHD (Cameroun) 2016</li>
+                    <li>Lornoar (Cameroun) </li>
+                  </ol>
+                </span>
+              </li>
+
+              <li class="flex items-start">
+                <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 13L9 17L19 7" stroke="url(#paint0_linear_515_2603)" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <defs>
+                    <linearGradient id="paint0_linear_515_2603" x1="5" y1="7" x2="20.3943" y2="10.1196"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#6DDCFF" />
+                      <stop offset="1" stop-color="#7F60F9" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <span class="ml-4 text-lg font-normal text-white">2 sélections officielles à Visa For Music du Maroc :
+                  <br>
+                  <ol>
+                    <li>Queen Koumb (Gabon) 2017</li>
+                    <li>Lornoar(Cameroun) 2018 </li>
+                  </ol>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-12 bg-white sm:py-16 lg:py-20 xl:py-24">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div class="grid grid-cols-1 lg:grid-cols-8 lg:gap-x-16 xl:gap-x-24 gap-y-12">
+          <div class="lg:col-span-5 xl:pr-24">
+
+            <div
+              class="grid grid-cols-1 pt-8 mt-8 border-t border-gray-200 sm:grid-cols-2 md:mt-16 xl:mt-24 gap-x-16 gap-y-8">
+              <div>
+                <ul>
+                  <li class="flex items-start">
+                    <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 13L9 17L19 7" stroke="url(#paint0_linear_515_2603)" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_515_2603" x1="5" y1="7" x2="20.3943" y2="10.1196"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#6DDCFF" />
+                          <stop offset="1" stop-color="#7F60F9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <span class="ml-4 text-lg font-normal">1 sélection officielle au Moshito d’Afrique du Sud<br>
+                      <ol>
+                        <li>ornoar (Cameroun) 2018 </li>
+                      </ol>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li class="flex items-start">
+                    <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 13L9 17L19 7" stroke="url(#paint0_linear_515_2603)" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_515_2603" x1="5" y1="7" x2="20.3943" y2="10.1196"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#6DDCFF" />
+                          <stop offset="1" stop-color="#7F60F9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <span class="ml-4 text-lg font-normal">2 sélections officielle au Séoul Music Week <br>
+                      <ol>
+                        <li>Lornoar (Cameroun)</li>
+                        <li>Pamela Badjogo (Gabon) 2019 </li>
+                      </ol>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <ul>
+                  <li class="flex items-start">
+                    <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 13L9 17L19 7" stroke="url(#paint0_linear_515_2603)" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_515_2603" x1="5" y1="7" x2="20.3943" y2="10.1196"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#6DDCFF" />
+                          <stop offset="1" stop-color="#7F60F9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <span class="ml-4 text-lg font-normal">10 selections au Masa off 2018 <br>
+                      <ol>
+                        <li>Queen Koumb, Myria Bika, Adango,Teety Tezano, </li>
+                        <li>Geneviève Matibeye, Estel Mveng, Licelv Mauwa, Nicole Obelé  </li>
+                      </ol>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li class="flex items-start">
+                    <svg class="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 13L9 17L19 7" stroke="url(#paint0_linear_515_2603)" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <defs>
+                        <linearGradient id="paint0_linear_515_2603" x1="5" y1="7" x2="20.3943" y2="10.1196"
+                          gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#6DDCFF" />
+                          <stop offset="1" stop-color="#7F60F9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                    <span class="ml-4 text-lg font-normal">6 selection à à Visa for Music 2018<br>
+                      <ol>
+                        <li>Licelv Mauwa, Teety Tezano, Tao, </li>
+                        <li>Mirya Bika, Estel Mveng, Patricia Essong</li>
+                      </ol>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-3">
+            <img class="w-full xl:h-full xl:object-cover rounded-3xl"
+              src="https://landingfoliocom.imgix.net/store/collection/saasui/images/features/2/feature-2.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio mt-32 lg:mx-16 md:mx-8 mx-4">
+      <div class="section-titles-handler flex justify-between">
+        <h1 class="lg:text-7xl md:text-5xl text-3xl bold capitalize stroke-transparent text-transparent">Latest case
+          study</h1>
+        <div class="link-content ml-64 lg:block hidden lg:mt-16 md:mt-8 mt-4 relative">
+          <a href="#"
+            class="before:content[''] relative before:w-3 before:absolute before:bg-black before:left-[-15px] before:top-3 inline-block before:h-1">View
+            all case study</a>
+        </div>
+      </div>
+      <div class="slider-handler  mt-16">
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide">
+              <div class="card-img-handler  relative">
+                <div class="img-handler relative block hover:duration-1000 overflow-hidden h-1/2">
+                  <img src="https://folio.webestica.com/assets/images/portfolio/07.jpg"
+                    class=" duration-1000 hover:scale-105  absolute w-full h-full" alt="">
+                  <div class=" z-10 text-white flex px-6 py-4 relative w-full">
+                    <i class="text-4xl">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm10 0h8v8h-8z" /></svg>
+                    </i>
+                    <p class="capitalize md:text-2xl text-xl lg:text-4xl lg:ml-3 md:ml-2 ml-1 lg:mr-28 md:mr-14 mr-7">
+                      microsoft</p>
+                  </div>
+                  <div class="mt-64 z-[2] px-6 py-4 ">
+                    <a href="#" class=" text-white bottom-2 absolute">
+                      <p class="font-bold text-xl">missing link</p>
+                      <p class="text-sm">
+                        these where the attributes that modern convern
+                      </p>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-img-handler  relative">
+                <div class="img-handler relative block hover:duration-1000 overflow-hidden h-1/2">
+                  <img src="https://folio.webestica.com/assets/images/portfolio/07.jpg"
+                    class=" duration-1000 hover:scale-105  absolute w-full h-full" alt="">
+                  <div class=" z-10 text-white flex px-6 py-4 relative w-full">
+                    <i class="text-4xl">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm10 0h8v8h-8z" /></svg>
+                    </i>
+                    <p class="capitalize md:text-2xl text-xl lg:text-4xl lg:ml-3 md:ml-2 ml-1 lg:mr-28 md:mr-14 mr-7">
+                      microsoft</p>
+                  </div>
+                  <div class="mt-64 z-[2] px-6 py-4 ">
+                    <a href="#" class=" text-white bottom-2 absolute">
+                      <p class="font-bold text-xl">missing link</p>
+                      <p class="text-sm">
+                        these where the attributes that modern convern
+                      </p>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-img-handler  relative">
+                <div class="img-handler relative block hover:duration-1000 overflow-hidden h-1/2">
+                  <img src="https://folio.webestica.com/assets/images/portfolio/07.jpg"
+                    class=" duration-1000 hover:scale-105  absolute w-full h-full" alt="">
+                  <div class=" z-10 text-white flex px-6 py-4 relative w-full">
+                    <i class="text-4xl">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm10 0h8v8h-8z" /></svg>
+                    </i>
+                    <p class="capitalize md:text-2xl text-xl lg:text-4xl lg:ml-3 md:ml-2 ml-1 lg:mr-28 md:mr-14 mr-7">
+                      microsoft</p>
+                  </div>
+                  <div class="mt-64 z-[2] px-6 py-4 ">
+                    <a href="#" class=" text-white bottom-2 absolute">
+                      <p class="font-bold text-xl">missing link</p>
+                      <p class="text-sm">
+                        these where the attributes that modern convern
+                      </p>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <div class="teaser lg:mt-16 md:mt-8 mt-4 mx-4 md:mx-16 lg:mx-32 lg:p-20 md:p-10 p-5">
+      <div class="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 gap-4">
+        <div class="left_el">
+          <p class="lg:text-2xl md:text-2xl text-xl font-bold">Project in mind? Questions to ask ?</p>
+          <h2 class="stroke-black font-bold text-transparent lg:text-7xl md:text-6xl text-5xl">Get in touch</h2>
+        </div>
+        <div class="right_el">
+          <p class="text-gray-400 lg:text-xl md:text-lg text-base font-bold">
+            Folio; an innovative Internet marketing solutions company that offers comprehensive web development, SMO
+            services, SEO strategies and various other types of Internet marketing related services.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class=" text-white bottom-0 left-0 w-full h-full bg-black bg-cover md:px-8 px-4 lg:px-16 py-12 ">
+    <div class="mx-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+      <div class="company-info">
+        <img src="../assets/cropped-Logo-Escale-Bantoo-2-1.png" alt="">
+        <div class="description text-gray-400 text-sm mt-5">
+          liquid based Creative Agency Portfolio Theme.
+        </div>
+        <div class="social-link flex justify-between mt-3">
+          <p class="font-bold text-lg">Follow on:</p>
+          <a href="#" class="text-base hover:text-eb">Fb</a>
+          <a href="#" class="text-base hover:text-eb">Tw</a>
+          <a href="#" class="text-base hover:text-eb">Dr</a>
+        </div>
+      </div>
+      <div class="offices">
+        <h2 class="text-xl font-bold">our offices</h2>
+        <div class="location-info text-gray-400 mb-6 mt-5">
+          <div class="city text-white mb-2">Yaounde , Cameroun</div>
+          <p class=" mb-1">
+            750 sing Rd, Horseheads,14845
+          </p>
+          <div>
+            <span>Telephone</span>
+            <a href="#" class=" underline">+237 656 30 57 10</a>
+          </div>
+
+          <div>
+            <span>Whatsapp</span>
+            <a href="#" class=" underline">+237 657 55 16 24</a>
+          </div>
+        </div>
+      </div>
+      <div class="usefull-links">
+        <h2 class="text-xl font-bold">
+          Usefull links
+        </h2>
+        <div class="grid mt-5 grid-cols-2 gap-3">
+          <ul class="text-gray-400 space-y-3">
+            <li>
+              <a href="#" class="capitalize hover:text-eb"> our work</a>
+            </li>
+            <li>
+              <a href="#" class="capitalize hover:text-eb"> our work</a>
+            </li>
+            <li>
+              <a href="#" class="capitalize hover:text-eb"> our work</a>
+            </li>
+            <li>
+              <a href="#" class="capitalize hover:text-eb"> our work</a>
+            </li>
+            <li>
+              <a href="#" class="capitalize hover:text-eb"> our work</a>
+            </li>
+          </ul>
+          <ul class="text-gray-400 space-y-3">
+            <li>
+              <a href="#" class="capitalize hover:text-eb"> our work</a>
+            </li>
+            <li>
+              <a href="#" class="capitalize hover:text-eb"> our work</a>
+            </li>
+            <li>
+              <a href="#" class="capitalize hover:text-eb"> our work</a>
+            </li>
+            <li>
+              <a href="#" class="capitalize hover:text-eb"> our work</a>
+            </li>
+            <li>
+              <a href="#" class="capitalize hover:text-eb"> our work</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-element bg-black lg:py-6 md:py-6 py-16 text-white">
+        <h2 class="text-xl font-bold">Stay in touch</h2>
+        <div class="element ">
+
+          <p class="desc-email text-gray-400 text-sm">
+            Subscribe to our newsletter to receive exclusive offers.
+          </p>
+          <form action="#" class="flex bg-black flex-wrap h-1">
+            <div class="emailField ">
+              <input type="email" name="" class="px-4 text-lg py-1 text-black mt-5  outline-0" id="">
+            </div>
+            <div class="submit-btn  relative">
+              <button type="submit"
+                class="w-36  md:mt-5 mt-5 font-bold relative px-4 py-2 capitalize bg-eb  text-white">
+                suscribe
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+
+</html>
