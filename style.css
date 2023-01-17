@@ -45,6 +45,11 @@
         -webkit-text-stroke-width: 1px;
         text-shadow: 0.03em 0.03em 0 #FF8E12;
       }
+      .stroke-black{
+        -webkit-text-stroke-color: rgb(236, 147, 12);
+        -webkit-text-stroke-width: 1px;
+        text-shadow: 0.03em 0.03em 0 #3E2211;
+      }
       
       .stroke-black-none{
         -webkit-text-stroke-color: rgb(0, 0, 0);
