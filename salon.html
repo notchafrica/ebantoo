@@ -1,544 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./about/style.css">
-
-  <meta name="theme-color" content="#FF8E12">
-  <link rel="shortcut icon" href="../assets/cropped-Logo-Escale-Bantoo-2-1.png" type="image/x-icon">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          backgroundImage: {
-            'teaserBg': "url('https://folio.webestica.com/assets/images/about/05.jpg')",
-            'woodshape': "url('https://folio.webestica.com/assets/images/bg/pattern/05.png')"
-          },
-          colors: {
-            'eb': '#FF8E12',
-            'second': '#3E2211'
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      
+        <meta name="theme-color" content="#FF8E12">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="../assets/cropped-Logo-Escale-Bantoo-2-1.png" type="image/x-icon">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                backgroundImage: {
+                  'teaserBg': "url('https://folio.webestica.com/assets/images/about/05.jpg')",
+                  'woodshape': "url('https://folio.webestica.com/assets/images/bg/pattern/05.png')",
+                  'eventbg':"url('https://glints.com/id/lowongan/wp-content/uploads/2020/05/photo-1540575467063-178a50c2df87.jpeg')"
+                },
+                colors: {
+                  'eb': '#FF8E12',
+                  'second': '#3f2312',
+                }
+              }
+            }
           }
-        }
-      }
-    }
-  </script>
-  <title>ebantoo</title>
-</head>
-
-<body class="overflow-x-hidden">
-
-  <main class=" mb-[47px] overflow-hidden z-10 bg-white block">
-    <header class="overflow-hidden block relative">
-
-      <nav class="
-        z-50
-        relative
-          flex flex-wrap
-          items-center
-          justify-between
-          w-full
-          py-4
-          md:py-0
-          px-8
-          text-lg 
-          bg-white
-        ">
-        <div>
-          <a href="#" class="link-home font-bold text-3xl">
-            <img src="./assets/cropped-Logo-Escale-Bantoo-2-1.png" class="w-16" alt="">
-          </a>
-        </div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
-          fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-
-        <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
-          <ul class="
-              pt-4
-              text-base text-gray-700
-              md:flex
-              md:justify-between 
-              md:pt-0">
-            <li>
-              <a class="md:p-4 py-2 block hover:text-eb" href="./index.html">Acceuil</a>
-            </li>
-            <li>
-              <a class="md:p-4 py-2 block hover:text-eb" href="./escale.html">Le programme</a>
-            </li>
-            <li>
-              <a class="md:p-4 py-2 block hover:text-eb" href="./salon.html">Le Salon</a>
-            </li>
-            <li>
-              <a class="md:p-4 py-2 block hover:text-eb" href="./services.html">Global Music Hub</a>
-            </li>
-            <li>
-              <a class="md:p-4 py-2 block hover:text-eb" href="./services.html">Music Business Session</a>
-            </li>
-            <li>
-              <a class="md:p-4 py-2 block hover:text-eb" href="./escale-music.html">Escale Music</a>
-            </li>
-            <li>
-              <a class="md:p-4 py-2 block hover:text-eb" href="./contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="quote lg:block md:block hidden">
-          <a href="#" class="px-4 py-2 text-white bg-eb font-bold capitalize">L'edition 2023</a>
-        </div>
-      </nav>
-      <div class="bg-teaserBg bg-cover h-96 lg:py-72 md:py-36 py-18 bg-center ">
-        <div class="description text-white absolute md:top-12 lg:top-32 z-10 md:mx-16 mx-8 lg:mx-32">
-          <h1 class="mt-7 w-2/3 lg:text-5xl md:text-2xl text-xl xs:text-lg font-bold">
-            LE SALON DE L’ESCALE BANTOO
-          </h1>
-          <p class="mt-5 mb-5 lg:text-lg md:text-sm xs:text-xs">
-            Lorem ipsum dolor sit amet consectetate provident eveniet corporis, sunt cum quae!
-          </p>
-          <a href="#" class="bg-eb p-3 mt-3 text-base capitalize font-bold"> contact us</a>
-        </div>
-        <div class="shape-pipa h-full bg-black opacity-60 w-screen absolute bottom-0">
-
-        </div>
-      </div>
-
-    </header>
-    <section class="memory md:mx-16 mx-8 lg:mx-32 mt-16 ">
-      <div class="title absolute">
-        <p class="text-xl font-bold">Historique</p>
-        <p class="year text-transparent stroke-black absolute z-10 text-7xl font-bold">2017</p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div class="relative h-full px-8 py-8 mt-9">
-          <div class="relative">
-            <img src="https://folio.webestica.com/assets/images/about/05.jpg" class=" relative" alt="">
-            <span
-              class="bg-eb absolute text-center md:inline-block right-3 hidden lg:block bottom-0 text-xl text-white origin-bottom -rotate-12 w-full px-1">
-              lorem ipsum dolor 🤘
-            </span>
-          </div>
-        </div>
-
-        <div class="element-right md:mt-12 lg:p-5 md:p-0 p-3 space-y-4">
-          <p class="slim-title font-semibold text-base">
-            Crée en 2017, le Salon international des voix de femmes est né du désir de l’équipe de Scène d’Ebène de
-            mettre en lumière de jeunes chanteuses africaines et faciliter aux jeunes acteurs de la filière musicale de
-            la sous-région Afrique centrale l’accès aux circuits internationaux
-          </p>
-          <p class="slim-title font-semibold text-base">
-            En cinq éditions dont une édition itinérante, le Salon international des voix de femme de l’Escale Bantoo a
-            rassemblé au Cameroun (Douala en 2017 et 2018, Yaoundé en 2022), plus de cinq cent artistes et
-            professionnels d’Afrique, d’Europe et d’Amérique du Nord.
-          </p>
-          <p class="slim-title font-semibold text-base">
-            Imposée par la pandémie du Covid 19, l’édition virtuel, organisée en 2020 s’est déroulée sur quatre pays
-            (Burundi, Cameroun, Tchad et RDC) et donnée lieu à une vingtaine de conférence en ligne, qui ont mobilisé
-            plus de 50 intervenants.
-          </p>
-          <p class="slim-title font-semibold text-base">
-            En 2021, Kinshasa la capitale de la RDC a accueilli la première édition itinérante du Salon de l’Escale
-            Bantoo, une formule qui permet au projet de se rapprocher des acteurs culturels que les conditions de voyage
-            en Afrique centrale empêchent de participer à la biennale du Cameroun.
-          </p>
-          <p class="slim-title font-semibold text-base">
-            N'djamena, la capitale du Tchad abritera la 2ème édition itinérante du Salon des voix de femmes.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="awards-honor lg:mx-24 md:mx-12 mx-6 mt-32">
-      <h2 class="lg:text-7xl md:text-3xl text-2xl font-bold stroke-black-none text-transparent">Interview</h2>
-      <div class="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-4 space-y-4 mt-14">
-        <div class="awards-card space-y-3">
-          <div class="year text-white bg-black px-1 inline-block py-1">2016</div>
-          <h2 class="awards-title text-2xl font-bold">Entrepreneur of the year</h2>
-          <p class="text-gray-400 text-sm">
-            For who thoroughly her boy estimating conviction. Removed demands expense
-          </p>
-        </div>
-        <div class="awards-card space-y-3">
-          <div class="year text-white bg-black px-1 inline-block py-1">2016</div>
-          <h2 class="awards-title text-2xl font-bold">Entrepreneur of the year</h2>
-          <p class="text-gray-400 text-sm">
-            For who thoroughly her boy estimating conviction. Removed demands expense
-          </p>
-        </div>
-        <div class="awards-card space-y-3">
-          <div class="year text-white bg-black px-1 inline-block py-1">2016</div>
-          <h2 class="awards-title text-2xl font-bold">Entrepreneur of the year</h2>
-          <p class="text-gray-400 text-sm">
-            For who thoroughly her boy estimating conviction. Removed demands expense
-          </p>
-        </div>
-        <div class="awards-card space-y-3">
-          <div class="year text-white bg-black px-1 inline-block py-1">2016</div>
-          <h2 class="awards-title text-2xl font-bold">Entrepreneur of the year</h2>
-          <p class="text-gray-400 text-sm">
-            For who thoroughly her boy estimating conviction. Removed demands expense
-          </p>
-        </div>
-        <div class="awards-card space-y-3">
-          <div class="year text-white bg-black px-1 inline-block py-1">2016</div>
-          <h2 class="awards-title text-2xl font-bold">Entrepreneur of the year</h2>
-          <p class="text-gray-400 text-sm">
-            For who thoroughly her boy estimating conviction. Removed demands expense
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="py-12 sm:py-16 lg:py-20 bg-second">
-      <div class="px-6 mx-auto sm:px-8 lg:px-12 max-w-7xl">
-        <div class="lg:flex lg:items-start lg:justify-between lg:space-x-12">
-          <h2 class="flex-1 tracking-tighter text-white">
-            <span class="font-sans text-4xl font-normal sm:text-5xl md:text-6xl"> Is this course </span>
-            <span class="block font-serif text-5xl italic sm:text-6xl md:text-7xl"> right for me? </span>
-          </h2>
-
-          <p class="mt-8 font-sans text-lg text-opacity-50 lg:mt-0 lg:max-w-sm text-white">
-            Amet facilisis egestas egestas nunc. Proin ut eget quam ornare tincidunt ornare in sit. Sociis facilisis leo
-            faucibus donec est neque. Neque in volutpat, at volutpat nulla enim risus nisl. Enim sed eget amet gravida
-            scelerisque egestas vitae.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 gap-5 mt-12 lg:mt-16 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray">
-            <div class="px-4 py-5 sm:p-6 md:p-8">
-              <svg class="w-12 h-12 text-white" viewBox="0 0 45 45" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M30.9375 22.5C33.525 22.5 35.6063 20.4 35.6063 17.8125C35.6063 15.225 33.525 13.125 30.9375 13.125C28.35 13.125 26.25 15.225 26.25 17.8125C26.25 20.4 28.35 22.5 30.9375 22.5ZM16.875 20.625C19.9875 20.625 22.4813 18.1125 22.4813 15C22.4813 11.8875 19.9875 9.375 16.875 9.375C13.7625 9.375 11.25 11.8875 11.25 15C11.25 18.1125 13.7625 20.625 16.875 20.625ZM30.9375 26.25C27.5063 26.25 20.625 27.975 20.625 31.4062V33.75C20.625 34.7812 21.4688 35.625 22.5 35.625H39.375C40.4062 35.625 41.25 34.7812 41.25 33.75V31.4062C41.25 27.975 34.3687 26.25 30.9375 26.25ZM16.875 24.375C12.5063 24.375 3.75 26.5688 3.75 30.9375V33.75C3.75 34.7812 4.59375 35.625 5.625 35.625H16.875V31.4062C16.875 29.8125 17.4938 27.0187 21.3188 24.9C19.6875 24.5625 18.1125 24.375 16.875 24.375Z" />
-              </svg>
-              <h3 class="mt-2 font-serif text-3xl italic text-white">Slack Community</h3>
-              <p class="mt-4 font-sans text-base font-normal text-opacity-50 text-white">Non pretium mi, sagittis
-                placerat. Elit risus malesuada ornare orci in. Tellus, tempor eget vitae aliquet suspendisse sed purus
-                velit elit.</p>
-            </div>
-          </div>
-
-          <div class="transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray">
-            <div class="px-4 py-5 sm:p-6 md:p-8">
-              <svg class="w-12 h-12 text-white" viewBox="0 0 45 45" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M30.9375 22.5C33.525 22.5 35.6063 20.4 35.6063 17.8125C35.6063 15.225 33.525 13.125 30.9375 13.125C28.35 13.125 26.25 15.225 26.25 17.8125C26.25 20.4 28.35 22.5 30.9375 22.5ZM16.875 20.625C19.9875 20.625 22.4813 18.1125 22.4813 15C22.4813 11.8875 19.9875 9.375 16.875 9.375C13.7625 9.375 11.25 11.8875 11.25 15C11.25 18.1125 13.7625 20.625 16.875 20.625ZM30.9375 26.25C27.5063 26.25 20.625 27.975 20.625 31.4062V33.75C20.625 34.7812 21.4688 35.625 22.5 35.625H39.375C40.4062 35.625 41.25 34.7812 41.25 33.75V31.4062C41.25 27.975 34.3687 26.25 30.9375 26.25ZM16.875 24.375C12.5063 24.375 3.75 26.5688 3.75 30.9375V33.75C3.75 34.7812 4.59375 35.625 5.625 35.625H16.875V31.4062C16.875 29.8125 17.4938 27.0187 21.3188 24.9C19.6875 24.5625 18.1125 24.375 16.875 24.375Z" />
-              </svg>
-              <h3 class="mt-2 font-serif text-3xl italic text-white">Slack Community</h3>
-              <p class="mt-4 font-sans text-base font-normal text-opacity-50 text-white">Non pretium mi, sagittis
-                placerat. Elit risus malesuada ornare orci in. Tellus, tempor eget vitae aliquet suspendisse sed purus
-                velit elit.</p>
-            </div>
-          </div>
-
-          <div class="transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray">
-            <div class="px-4 py-5 sm:p-6 md:p-8">
-              <svg class="w-12 h-12 text-white" viewBox="0 0 45 45" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M30.9375 22.5C33.525 22.5 35.6063 20.4 35.6063 17.8125C35.6063 15.225 33.525 13.125 30.9375 13.125C28.35 13.125 26.25 15.225 26.25 17.8125C26.25 20.4 28.35 22.5 30.9375 22.5ZM16.875 20.625C19.9875 20.625 22.4813 18.1125 22.4813 15C22.4813 11.8875 19.9875 9.375 16.875 9.375C13.7625 9.375 11.25 11.8875 11.25 15C11.25 18.1125 13.7625 20.625 16.875 20.625ZM30.9375 26.25C27.5063 26.25 20.625 27.975 20.625 31.4062V33.75C20.625 34.7812 21.4688 35.625 22.5 35.625H39.375C40.4062 35.625 41.25 34.7812 41.25 33.75V31.4062C41.25 27.975 34.3687 26.25 30.9375 26.25ZM16.875 24.375C12.5063 24.375 3.75 26.5688 3.75 30.9375V33.75C3.75 34.7812 4.59375 35.625 5.625 35.625H16.875V31.4062C16.875 29.8125 17.4938 27.0187 21.3188 24.9C19.6875 24.5625 18.1125 24.375 16.875 24.375Z" />
-              </svg>
-              <h3 class="mt-2 font-serif text-3xl italic text-white">Slack Community</h3>
-              <p class="mt-4 font-sans text-base font-normal text-opacity-50 text-white">Non pretium mi, sagittis
-                placerat. Elit risus malesuada ornare orci in. Tellus, tempor eget vitae aliquet suspendisse sed purus
-                velit elit.</p>
-            </div>
-          </div>
-
-          <div class="transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray">
-            <div class="px-4 py-5 sm:p-6 md:p-8">
-              <svg class="w-12 h-12 text-white" viewBox="0 0 45 45" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M30.9375 22.5C33.525 22.5 35.6063 20.4 35.6063 17.8125C35.6063 15.225 33.525 13.125 30.9375 13.125C28.35 13.125 26.25 15.225 26.25 17.8125C26.25 20.4 28.35 22.5 30.9375 22.5ZM16.875 20.625C19.9875 20.625 22.4813 18.1125 22.4813 15C22.4813 11.8875 19.9875 9.375 16.875 9.375C13.7625 9.375 11.25 11.8875 11.25 15C11.25 18.1125 13.7625 20.625 16.875 20.625ZM30.9375 26.25C27.5063 26.25 20.625 27.975 20.625 31.4062V33.75C20.625 34.7812 21.4688 35.625 22.5 35.625H39.375C40.4062 35.625 41.25 34.7812 41.25 33.75V31.4062C41.25 27.975 34.3687 26.25 30.9375 26.25ZM16.875 24.375C12.5063 24.375 3.75 26.5688 3.75 30.9375V33.75C3.75 34.7812 4.59375 35.625 5.625 35.625H16.875V31.4062C16.875 29.8125 17.4938 27.0187 21.3188 24.9C19.6875 24.5625 18.1125 24.375 16.875 24.375Z" />
-              </svg>
-              <h3 class="mt-2 font-serif text-3xl italic text-white">Slack Community</h3>
-              <p class="mt-4 font-sans text-base font-normal text-opacity-50 text-white">Non pretium mi, sagittis
-                placerat. Elit risus malesuada ornare orci in. Tellus, tempor eget vitae aliquet suspendisse sed purus
-                velit elit.</p>
-            </div>
-          </div>
-
-          <div class="transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray">
-            <div class="px-4 py-5 sm:p-6 md:p-8">
-              <svg class="w-12 h-12 text-white" viewBox="0 0 45 45" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M30.9375 22.5C33.525 22.5 35.6063 20.4 35.6063 17.8125C35.6063 15.225 33.525 13.125 30.9375 13.125C28.35 13.125 26.25 15.225 26.25 17.8125C26.25 20.4 28.35 22.5 30.9375 22.5ZM16.875 20.625C19.9875 20.625 22.4813 18.1125 22.4813 15C22.4813 11.8875 19.9875 9.375 16.875 9.375C13.7625 9.375 11.25 11.8875 11.25 15C11.25 18.1125 13.7625 20.625 16.875 20.625ZM30.9375 26.25C27.5063 26.25 20.625 27.975 20.625 31.4062V33.75C20.625 34.7812 21.4688 35.625 22.5 35.625H39.375C40.4062 35.625 41.25 34.7812 41.25 33.75V31.4062C41.25 27.975 34.3687 26.25 30.9375 26.25ZM16.875 24.375C12.5063 24.375 3.75 26.5688 3.75 30.9375V33.75C3.75 34.7812 4.59375 35.625 5.625 35.625H16.875V31.4062C16.875 29.8125 17.4938 27.0187 21.3188 24.9C19.6875 24.5625 18.1125 24.375 16.875 24.375Z" />
-              </svg>
-              <h3 class="mt-2 font-serif text-3xl italic text-white">Slack Community</h3>
-              <p class="mt-4 font-sans text-base font-normal text-opacity-50 text-white">Non pretium mi, sagittis
-                placerat. Elit risus malesuada ornare orci in. Tellus, tempor eget vitae aliquet suspendisse sed purus
-                velit elit.</p>
-            </div>
-          </div>
-
-          <div class="transition-all duration-200 border rounded-lg border-neutral hover:bg-dark-gray">
-            <div class="px-4 py-5 sm:p-6 md:p-8">
-              <svg class="w-12 h-12 text-white" viewBox="0 0 45 45" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M30.9375 22.5C33.525 22.5 35.6063 20.4 35.6063 17.8125C35.6063 15.225 33.525 13.125 30.9375 13.125C28.35 13.125 26.25 15.225 26.25 17.8125C26.25 20.4 28.35 22.5 30.9375 22.5ZM16.875 20.625C19.9875 20.625 22.4813 18.1125 22.4813 15C22.4813 11.8875 19.9875 9.375 16.875 9.375C13.7625 9.375 11.25 11.8875 11.25 15C11.25 18.1125 13.7625 20.625 16.875 20.625ZM30.9375 26.25C27.5063 26.25 20.625 27.975 20.625 31.4062V33.75C20.625 34.7812 21.4688 35.625 22.5 35.625H39.375C40.4062 35.625 41.25 34.7812 41.25 33.75V31.4062C41.25 27.975 34.3687 26.25 30.9375 26.25ZM16.875 24.375C12.5063 24.375 3.75 26.5688 3.75 30.9375V33.75C3.75 34.7812 4.59375 35.625 5.625 35.625H16.875V31.4062C16.875 29.8125 17.4938 27.0187 21.3188 24.9C19.6875 24.5625 18.1125 24.375 16.875 24.375Z" />
-              </svg>
-              <h3 class="mt-2 font-serif text-3xl italic text-white">Slack Community</h3>
-              <p class="mt-4 font-sans text-base font-normal text-opacity-50 text-white">Non pretium mi, sagittis
-                placerat. Elit risus malesuada ornare orci in. Tellus, tempor eget vitae aliquet suspendisse sed purus
-                velit elit.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-12 bg-gray-900 sm:py-16 lg:py-20">
-      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <h1 class="max-w-4xl mt-6 text-3xl font-bold text-white sm:text-4xl xl:text-5xl font-pj xl:max-w-5xl">La Scène
-          itinérante de l’Escale Bantoo, </h1>
-
-        <div class="grid grid-cols-1 mt-10 lg:grid-cols-12 lg:mt-24 gap-y-10 lg:gap-x-20">
-
-
-          <div class="lg:col-span-7 order-1 lg:order-0">
-            <p class="text-base font-normal leading-7 text-gray-300 font-pj">
-              Inscrite dans le prolongement du Salon des voix de femme, la scène itinérante de l’Escale Bantoo a
-              favorisé la présence de centaine de jeunes artistes, managers, opérateurs culturels et journalistes
-              d’Afrique centrale au Marché des Arts du spectacle d’Abidjan en 2018, à sur Visa For Music 2018, le Salon
-              des musiques d’Afrique et du Moyen orient de Rabat (Maroc), à Promote 2019, le Salon international de
-              l’entreprise de Yaoundé.
-            </p>
-
-            <h2 class="mt-10 text-2xl text-white font-pj font-bodl">Escale Bantoo au MASA 2018 I Escale Bantoo sur Visa
-              For Music </h2>
-
-            <div class="mt-4">
-              <div class="relative" style="padding-top: 56.25%">
-                <iframe class="absolute inset-0 w-full h-full rounded-xl"
-                  src="https://www.youtube-nocookie.com/embed/FMrtSHAAPhM" frameborder="0" …></iframe>
-              </div>
-            </div>
-          </div>
-          <div class="lg:col-span-5 order-0 lg:order-1">
-            <div class="overflow-hidden rounded-2xl lg:h-full max-h-96 lg:max-h-full">
-              <img class="object-cover lg:h-full"
-                src="https://cdn.rareblocks.xyz/collection/clarity/images/long-form/2/img-blog.png" alt="" />
-            </div>
-            <!-- <div class="w-full h-full overflow-hidden rounded-2xl aspect-w-3 aspect-h-4 sm:aspect-h-3 lg:aspect-none">
-                <img class="object-cover w-full h-full lg:w-auto" src="https://cdn.rareblocks.xyz/collection/clarity/images/long-form/2/img-blog.png" alt="">
-              </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <div class="teaser lg:mx-32 md:mx-16 mx-6 mt-32">
-      <div class="lg:grid grid-cols-2 grid-cols-1 ">
-        <div class="element relative ">
-          <div
-            class="backcontent h-full bg-center bg-teaserBg text-white before-content[''] before:bg-eb before:absolute before:h-full before:w-full before:opacity-90 z-[-1]">
-            <div class="z-20 relative flex-col h-2/3 lg:p-24 md:p-12 p-6 flex text-center ">
-              <div class="stroke-white text-transparent text-5xl capitalize font-bold">
-                our work
-              </div>
-              <div class="link-content mt-8  relative flex">
-                <a href="#"
-                  class="before:content[''] before:ml-28 lg:ml-10 md:ml-3 ml-2 before:w-3 before:absolute before:bg-white  before:left-70 before:top-3 before:h-1">
-                  <div class="relative  inline-block">View all services</div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="right-element bg-black text-white h-full w-full">
-          <div class="z-20 relative flex-col h-2/3 lg:p-24 md:p-12 p-6 flex text-center ">
-            <div class="md:text-3xl text-2xl lg:text-5xl font-bold">
-              Have a project ?
-            </div>
-            <div class="link-content mt-8 relative">
-              <a href="#"
-                class="before:content['']  before:hidden lg:block before:ml-28 ml-10 before:w-3 before:absolute before:bg-white  before:left-[50px] before:top-3 before:h-1">
-                <div class="relative block! important">Get a Quote</div>
+        </script>
+        <title>ebantoo</title>
+      </head>
+<body>
+    <main class="mb-[4px] z-10 overflow-hidden bg-white block">
+        <header class="relative block">
+          <nav class="
+            z-50
+            relative
+              flex flex-wrap
+              items-center
+              justify-between
+              w-full
+              py-4
+              md:py-0
+              px-8
+              text-lg 
+              bg-white
+            ">
+            <div>
+              <a href="#" class="link-home font-bold text-3xl">
+                <img src="./assets/cropped-Logo-Escale-Bantoo-2-1.png" class="w-16" alt="">
               </a>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="absolute z-20 mt-5">
-        <figure class="position-absolute start-0 bottom-0 ms-n6 mb-n4 z-index-9 d-none d-lg-block">
-          <svg width="285" height="82" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 82">
-            <rect class="red" fill="red" x="22.67" y="16.58" width="262.22" height="65.42"></rect>
-            <path
-              d="m9.63 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0.01-4.82-2.15-4.82-4.81s2.16-4.81 4.81-4.81c2.66 0 4.82 2.15 4.82 4.81z">
-            </path>
-            <path
-              d="m35.25 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m60.88 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m86.5 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m112.12 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m137.75 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m163.37 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m188.99 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m214.62 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m240.24 4.83c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m9.63 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0.01-4.82-2.15-4.82-4.81s2.16-4.81 4.81-4.81c2.66 0 4.82 2.16 4.82 4.81z">
-            </path>
-            <path
-              d="m35.25 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.16 4.81 4.81z">
-            </path>
-            <path
-              d="m60.88 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.16 4.81 4.81z">
-            </path>
-            <path
-              d="m86.5 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.16 4.81 4.81z">
-            </path>
-            <path
-              d="m112.12 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66 0 4.81 2.16 4.81 4.81z">
-            </path>
-            <path
-              d="m137.75 30.38c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81s4.81 2.16 4.81 4.81z">
-            </path>
-            <circle cx="158.56" cy="30.38" r="4.81"></circle>
-            <circle cx="184.18" cy="30.38" r="4.81"></circle>
-            <circle cx="209.8" cy="30.38" r="4.81"></circle>
-            <circle cx="235.43" cy="30.38" r="4.81"></circle>
-            <path
-              d="m9.63 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.82-2.16-4.82-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66-0.01 4.82 2.15 4.82 4.81z">
-            </path>
-            <path
-              d="m35.25 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66-0.01 4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m60.88 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.65-0.01 4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m86.5 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.65-0.01 4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m112.12 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.66-0.01 4.81 2.15 4.81 4.81z">
-            </path>
-            <path
-              d="m137.75 55.94c0 2.66-2.16 4.81-4.81 4.81-2.66 0-4.81-2.16-4.81-4.81 0-2.66 2.16-4.81 4.81-4.81 2.65-0.01 4.81 2.15 4.81 4.81z">
-            </path>
-            <circle cx="158.56" cy="55.94" r="4.81"></circle>
-            <circle cx="184.18" cy="55.94" r="4.81"></circle>
-            <circle cx="209.8" cy="55.94" r="4.81"></circle>
-            <circle cx="235.43" cy="55.94" r="4.81"></circle>
-          </svg>
-        </figure>
-      </div>
-    </div>
-  </main>
-
-  <footer class=" text-white bottom-0 left-0 w-full h-full bg-black bg-cover md:px-8 px-4 lg:px-16 py-28  ">
-    <div class="mx-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
-      <div class="company-info">
-        <img src="../assets/cropped-Logo-Escale-Bantoo-2-1.png" alt="">
-        <!-- <div class="description text-gray-400 text-sm mt-5">
-
-      </div> -->
-        <div class="social-link flex items-center mt-3">
-          <p class="font-bold text-lg">Follow on:</p>
-          <a href="https://web.facebook.com/escalebantoo" class="ml-3 text-base text-white  hover:text-eb">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
-              viewBox="0 0 16 16">
-              <path
-                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+    
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-          </a>
-        </div>
-      </div>
-      <div class="offices">
-        <h2 class="text-xl font-bold">Nous retrouver</h2>
-        <div class="location-info text-gray-400 mb-6 mt-5">
-          <div class="city text-white mb-2">Yaounde, Cameroun</div>
-          <p class=" mb-1">
-            Simbock-Yaoundé (lieu dit Carrefour Jouvence)
-          </p>
-          <div>
-            <span>Telephone</span>
-            <a href="#" class=" underline">+237 656 30 57 10</a>
-          </div>
-
-          <div>
-            <span>Whatsapp</span>
-            <a href="#" class=" underline">+237 657 55 16 24</a>
-          </div>
-        </div>
-      </div>
-      <div class="usefull-links">
-        <h2 class="text-xl font-bold">
-          Nos services
-        </h2>
-        <div class="grid mt-5 grid-cols-1 gap-3">
-          <ul class="text-gray-400 space-y-3">
-            <li>
-              <a href="#" class="capitalize hover:text-eb"> L'Escale bantoo</a>
-            </li>
-            <li>
-              <a href="#" class="capitalize hover:text-eb"> L'Escale Musique </a>
-            </li>
-            <li>
-              <a href="#" class="capitalize hover:text-eb">L'escale Bantoo global musique hub</a>
-            </li>
-            <li>
-              <a href="#" class="capitalize hover:text-eb"> Le salon de l'escale bantoo</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="right-element bg-black  text-white">
-        <h2 class="text-xl font-bold">Garder contact</h2>
-        <div class="element ">
-
-          <p class="desc-email text-gray-400 text-sm">
-            Souscrire a notre boite aux lettres
-          </p>
-          <form action="#" class="flex bg-black flex-wrap h-1">
-            <div class="emailField ">
-              <input type="email" name="" class="px-4 ring-0 focus:ring-eb text-lg py-1 text-black mt-2  outline-0"
-                id="">
+    
+            <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+              <ul class="
+                  pt-4
+                  text-base text-gray-700
+                  md:flex
+                  md:justify-between 
+                  md:pt-0">
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./index.html">Acceuil</a>
+                </li>
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./escale.html">Le programme</a>
+                </li>
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./salon.html">Le Salon</a>
+                </li>
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./services.html">Global Music Hub</a>
+                </li>
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./services.html">Music Business Session</a>
+                </li>
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./escale-music.html">Escale Music</a>
+                </li>
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
-            <div class="submit-btn  relative">
-              <button type="submit"
-                class="w-36  md:mt-5 mt-2 font-bold relative px-4 py-2 capitalize bg-eb  text-white">
-                Souscrire
-              </button>
+    
+            <div class="quote lg:block md:block hidden">
+              <a href="#" class="px-4 py-2 text-white bg-eb font-bold capitalize">L'edition 2023</a>
             </div>
-          </form>
+          </nav>
+          <div class=" w-full bg-eventbg bg-center bg-cover block h-96 text-center  overflow-hidden">
+            <div class="bg-gradient-to-tr w-full h-full from-second to-transparent flex justify-center items-center">
+                
+                <div class=" flex justify-center flex-col gap-8 w-full items-center">
+                    <img class="w-64" src="./assets/cropped-Logo-Escale-Bantoo-2-1.png" alt="">
+                    <div class="flex gap-16">
+                        <div class="day font-bold text-3xl text-white bg-eb px-2 py-2 rounded-xl"></div>
+                        <div class="hours font-bold text-3xl text-white bg-eb px-2 py-2 rounded-xl"></div>
+                        <div class="min font-bold text-3xl text-white bg-eb px-2 py-2 rounded-xl"></div>
+                        <div class="sec font-bold text-3xl text-white bg-eb px-2 py-2 rounded-xl"></div> 
+                    </div>
+                    
+                </div>
+            </div>
+            
+          </div>
+        </header>
+        <section class="mt-16 lg:mx-16 space-y-12 md:mx-2">
+            <div class="grid md:grid-cols-2 grid-cols-1">
+                <div class=" px-4 py-4 space-y-6">
+                    <h2 class="uppercase text-center text-second font-bold text-4xl">
+                        se former
+                    </h2>
+                    <p class=" text-base italic text-center">
+                        Quatre modules de formation sur les métiers de la musique seront
+                        offerts à 20 jeunes acteurs culturels d’Afrique centrale, principalement
+                        des jeunes femmes (80%), sélectionnés à la suite d’un appel à candidature. Ces formations seront dispensées en ligne, pour les parties
+                        théoriques, et en présentielles pour les phases pratiques.
+                    </p>
+                    <div class="space-y-3">
+                        <h2 class="text-3xl text-second font-bold capitalize">
+                            modules
+                        </h2>
+                        <div class="text-base  before:content[''] before:h-1 before:w-4 before:bg-eb before:absolute relative before:top-3 ml-5 before:left-[-17px]">manager d'artiste</div>
+                    </div>
+                    <div class="space-y-3">
+                        <h2 class="text-3xl text-second font-bold capitalize">
+                            programme
+                        </h2>
+                        <div class="text-base text-white before:content[''] before:h-1 before:w-4 before:bg-eb before:absolute relative before:top-3 ml-5 before:left-[-17px]">session theorique en ligne</div>
+                    </div>
+                </div>
+                <div class="img">
+                    <img class="h-full w-full" src="https://www.eaie.org/.imaging/mte/eaie-theme/full-width-large/dam/images/blog-images/2021/1000x667_Blog_Return-to-in-person.jpg/jcr:content/1000x667_Blog_Return%20to%20in-person.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 grid-cols-1">
+                <div class="img">
+                    <img class="h-full w-full" src="https://www.eaie.org/.imaging/mte/eaie-theme/full-width-large/dam/images/blog-images/2021/1000x667_Blog_Return-to-in-person.jpg/jcr:content/1000x667_Blog_Return%20to%20in-person.jpg" alt="">
+                </div>
+                <div class=" px-4 py-4 space-y-6">
+                    <h2 class="uppercase text-center text-second font-bold text-4xl">
+                        apprendre et comprendre
+                    </h2>
+                    <p class="italic text-base text-center">
+                        Pour aider les jeunes acteurs de la filière musicale à apprendre et comprendre les problèmatiques actuelles de la Music Business en Afrique
+et les inégalités de genre dans le secteur musical, la sixième édition du
+Salon de l’Escale Bantoo propose des conférences autour de 5 thèmes
+centraux animés par des professionnels de la filière musicale internationale.
+                    </p>
+                    <div class="space-y-3">
+                        <h2 class="text-3xl text-second font-bold capitalize">
+                            les themes
+                        </h2>
+                        <div class="text-base  before:content[''] before:h-1 before:w-4 before:bg-second before:absolute relative before:top-3 ml-5 before:left-[-17px]">Être une femme dans le secteur musical africain : parcours et expériences ;</div>
+                    </div>
+                    <div class="space-y-3">
+                        <h2 class="text-3xl text-second font-bold capitalize">
+                            intervenants
+                        </h2>
+                        <p class="text-base ">
+                            En provenance de quinze pays, dont 14 d’Afrique, plus de 20 professionnels, représentants de maisons de disque, festivals et salon internationaux, Société de gestion collective, partageront leurs savoir-faire
+et leurs expériences sur la Music Business et les inégalités de genre
+dans le secteur culturel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 grid-cols-1">
+                <div class=" px-4 py-4 space-y-6">
+                    <h2 class="uppercase text-center text-second font-bold text-4xl">
+                        se vendre
+                    </h2>
+                    <p class="italic text-base text-center">
+                        Le Salon de l’Escale Bantoo offre à de jeunes chanteuses africaines
+l’opportunité de se produire devant des directeurs de salons et festivals
+internationaux de musique, des Bookers, des responsables d’institutions et des journalistes des médias nationaux et internationaux. 
+                    </p>
+                    <div class="text-base text-white">
+                        La sélection officielle de la 6ème édition du Salon de l’Escale Bantoo
+comptera 14 jeunes chanteuses proposés par un jury international.
+Le Salon s’ouvrira sur un concert qui réunira les chanteuses de la Résidence de création. Les 14 artistes sélectionnés se produiront sur les
+scènes officielles du Salon, à Douala et Yaoundé.
+Une Scène Off, éclatée dans la ville de Yaoundé, accueillera les artistes
+proposés par les partenaires de l’Escale Bantoo.
+Toutes les prestations des scènes officielles feront l’objet de captations
+qui seront diffusées plus tard sur les pages officielles de l’Escale Bantoo
+et des chaines de télévision partenaires
+                    </div>
+                </div>
+                <div class="img">
+                    <img class="h-full w-full" src="https://baselunaire.com/medias/comment-vendre-en-ligne.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class=" text-white bottom-0 left-0 w-full h-full bg-black bg-cover md:px-8 px-4 lg:px-16 py-28  ">
+        <div class="mx-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+        <div class="company-info">
+            <img src="../assets/cropped-Logo-Escale-Bantoo-2-1.png" alt="">
+            <!-- <div class="description text-gray-400 text-sm mt-5">
+
+            </div> -->
+            <div class="social-link flex items-center mt-3">
+            <p class="font-bold text-lg">Follow on:</p>
+            <a href="https://web.facebook.com/escalebantoo" class="ml-3 text-base text-white  hover:text-eb">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+                viewBox="0 0 16 16">
+                <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+            </a>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
+        <div class="offices">
+            <h2 class="text-xl font-bold">Nous retrouver</h2>
+            <div class="location-info text-gray-400 mb-6 mt-5">
+            <div class="city text-white mb-2">Yaounde, Cameroun</div>
+            <p class=" mb-1">
+                Simbock-Yaoundé (lieu dit Carrefour Jouvence)
+            </p>
+            <div>
+                <span>Telephone</span>
+                <a href="#" class=" underline">+237 656 30 57 10</a>
+            </div>
+
+            <div>
+                <span>Whatsapp</span>
+                <a href="#" class=" underline">+237 657 55 16 24</a>
+            </div>
+            </div>
+        </div>
+        <div class="usefull-links">
+            <h2 class="text-xl font-bold">
+            Nos services
+            </h2>
+            <div class="grid mt-5 grid-cols-1 gap-3">
+            <ul class="text-gray-400 space-y-3">
+                <li>
+                <a href="#" class="capitalize hover:text-eb"> L'Escale bantoo</a>
+                </li>
+                <li>
+                <a href="#" class="capitalize hover:text-eb"> L'Escale Musique </a>
+                </li>
+                <li>
+                <a href="#" class="capitalize hover:text-eb">L'escale Bantoo global musique hub</a>
+                </li>
+                <li>
+                <a href="#" class="capitalize hover:text-eb"> Le salon de l'escale bantoo</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="right-element bg-black  text-white">
+            <h2 class="text-xl font-bold">Garder contact</h2>
+            <div class="element ">
+
+            <p class="desc-email text-gray-400 text-sm">
+                Souscrire a notre boite aux lettres
+            </p>
+            <form action="#" class="flex bg-black flex-wrap h-1">
+                <div class="emailField ">
+                <input type="email" name="" class="px-4 ring-0 focus:ring-eb text-lg py-1 text-black mt-2  outline-0"
+                    id="">
+                </div>
+                <div class="submit-btn  relative">
+                <button type="submit"
+                    class="w-36  md:mt-5 mt-2 font-bold relative px-4 py-2 capitalize bg-eb  text-white">
+                    Souscrire
+                </button>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="./event/app.js"></script>
 </body>
-<script src="./app.js"></script>
-
 </html>
