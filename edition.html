@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+      
+        <meta name="theme-color" content="#FF8E12">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="../assets/cropped-Logo-Escale-Bantoo-2-1.png" type="image/x-icon">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                backgroundImage: {
+                  'teaserBg': "url('https://folio.webestica.com/assets/images/about/05.jpg')",
+                  'woodshape': "url('https://folio.webestica.com/assets/images/bg/pattern/05.png')",
+                  'eventbg':"url('./assets/fame.jpg')"
+                },
+                colors: {
+                  'eb': '#FF8E12',
+                  'second': '#3f2312',
+                }
+              }
+            }
+          }
+        </script>
+        <title>ebantoo</title>
+      </head>
+<body>
+    <main class="mb-[4px] z-10 overflow-hidden bg-white block">
+        <header class="relative block">
+          <nav class="
+            z-50
+            relative
+              flex flex-wrap
+              items-center
+              justify-between
+              w-full
+              py-4
+              md:py-0
+              px-8
+              text-lg 
+              bg-white
+            ">
+            <div>
+              <a href="#" class="link-home font-bold text-3xl">
+                <img src="./assets/cropped-Logo-Escale-Bantoo-2-1.png" class="w-16" alt="">
+              </a>
+            </div>
+    
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+    
+            <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+              <ul class="
+                  pt-4
+                  text-base text-gray-700
+                  md:flex
+                  md:justify-between 
+                  md:pt-0">
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./index.html">Acceuil</a>
+                </li>
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./escale.html">Le programme</a>
+                </li>
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./salon.html">Le Salon</a>
+                </li>
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./services.html">Global Music Hub</a>
+                </li>
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./services.html">Music Business Session</a>
+                </li>
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./escale-music.html">Escale Music</a>
+                </li>
+                <li>
+                  <a class="md:p-4 py-2 block hover:text-eb" href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="quote lg:block md:block hidden">
+              <a href="./edition.html" class="px-4 py-2 text-white bg-eb font-bold capitalize">L'edition 2023</a>
+            </div>
+          </nav>
+          <div class=" w-full bg-eventbg  bg-cover block h-screen text-center overflow-hidden">
+            <div class="bg-gradient-to-tr w-full h-screen from-second to-transparent flex py-8 justify-center items-center">
+                
+                <div class=" flex justify-center flex-col gap-8 w-full items-center">
+                    <img class="w-64" src="./assets/cropped-Logo-Escale-Bantoo-2-1.png" alt="">
+                    <a href="#" class="inline-block bg-eb text-white md:text-xl py-2 px-3 rounded-xl">S'inscrire a l'evenement</a>
+                    <div class="flex gap-4">
+                        <div class="day font-bold  md:text-3xl text-white bg-eb px-2 py-2 rounded-xl"></div>
+                        <div class="hours font-bold  md:text-3xl text-white bg-eb px-2 py-2 rounded-xl"></div>
+                        <div class="min font-bold  md:text-3xl text-white bg-eb px-2 py-2 rounded-xl"></div>
+                        <div class="sec font-bold  md:text-3xl text-white bg-eb px-2 py-2 rounded-xl"></div> 
+                    </div>
+                    
+                </div>
+            </div>
+            
+          </div>
+        </header>
+        <section class="mt-16 lg:mx-16 space-y-12 mx-2">
+            <div class="grid md:grid-cols-2 grid-cols-1">
+                <div class=" px-4 py-4 space-y-6">
+                    <h2 class="uppercase text-center text-second font-bold text-4xl">
+                        se former
+                    </h2>
+                    <p class=" text-base italic text-center">
+                        Quatre modules de formation sur les métiers de la musique seront
+                        offerts à 20 jeunes acteurs culturels d’Afrique centrale, principalement
+                        des jeunes femmes (80%), sélectionnés à la suite d’un appel à candidature. Ces formations seront dispensées en ligne, pour les parties
+                        théoriques, et en présentielles pour les phases pratiques.
+                    </p>
+                    <div class="space-y-3">
+                        <h2 class="text-3xl text-second font-bold capitalize">
+                            modules
+                        </h2>
+                        <div class="text-base  before:content[''] before:h-1 before:w-4 before:bg-eb before:absolute relative before:top-3 ml-5 before:left-[-17px]">manager d'artiste</div>
+                    </div>
+                    <div class="space-y-3">
+                        <h2 class="text-3xl text-second font-bold capitalize">
+                            programme
+                        </h2>
+                        <div class="text-base before:content[''] before:h-1 before:w-4 before:bg-eb before:absolute relative before:top-3 ml-5 before:left-[-17px]">session theorique en ligne</div>
+                    </div>
+                </div>
+                <div class="img">
+                    <img class=" w-full rounded-xl" src="https://www.eaie.org/.imaging/mte/eaie-theme/full-width-large/dam/images/blog-images/2021/1000x667_Blog_Return-to-in-person.jpg/jcr:content/1000x667_Blog_Return%20to%20in-person.jpg" alt="">
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 grid-cols-1">
+                <div class="img">
+                    <img class=" w-full rounded-xl" src="https://www.eaie.org/.imaging/mte/eaie-theme/full-width-large/dam/images/blog-images/2021/1000x667_Blog_Return-to-in-person.jpg/jcr:content/1000x667_Blog_Return%20to%20in-person.jpg" alt="">
+                </div>
+                <div class=" px-4 py-4 space-y-6">
+                    <h2 class="uppercase text-center text-second font-bold text-4xl">
+                        apprendre et comprendre
+                    </h2>
+                    <p class="italic text-base text-center">
+                        Pour aider les jeunes acteurs de la filière musicale à apprendre et comprendre les problèmatiques actuelles de la Music Business en Afrique
+et les inégalités de genre dans le secteur musical, la sixième édition du
+Salon de l’Escale Bantoo propose des conférences autour de 5 thèmes
+centraux animés par des professionnels de la filière musicale internationale.
+                    </p>
+                    <div class="space-y-3">
+                        <h2 class="text-3xl text-second font-bold capitalize">
+                            les themes
+                        </h2>
+                        <div class="text-base  before:content[''] before:h-1 before:w-4 before:bg-second before:absolute relative before:top-3 ml-5 before:left-[-17px]">Être une femme dans le secteur musical africain : parcours et expériences ;</div>
+                    </div>
+                    <div class="space-y-3">
+                        <h2 class="text-3xl text-second font-bold capitalize">
+                            intervenants
+                        </h2>
+                        <p class="text-base ">
+                            En provenance de quinze pays, dont 14 d’Afrique, plus de 20 professionnels, représentants de maisons de disque, festivals et salon internationaux, Société de gestion collective, partageront leurs savoir-faire
+et leurs expériences sur la Music Business et les inégalités de genre
+dans le secteur culturel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 grid-cols-1">
+                <div class=" px-4 py-4 space-y-6">
+                    <h2 class="uppercase text-center text-second font-bold text-4xl">
+                        se vendre
+                    </h2>
+                    <p class="italic text-base text-center">
+                        Le Salon de l’Escale Bantoo offre à de jeunes chanteuses africaines
+l’opportunité de se produire devant des directeurs de salons et festivals
+internationaux de musique, des Bookers, des responsables d’institutions et des journalistes des médias nationaux et internationaux. 
+                    </p>
+                    <div class="text-base ">
+                        La sélection officielle de la 6ème édition du Salon de l’Escale Bantoo
+comptera 14 jeunes chanteuses proposés par un jury international.
+Le Salon s’ouvrira sur un concert qui réunira les chanteuses de la Résidence de création. Les 14 artistes sélectionnés se produiront sur les
+scènes officielles du Salon, à Douala et Yaoundé.
+Une Scène Off, éclatée dans la ville de Yaoundé, accueillera les artistes
+proposés par les partenaires de l’Escale Bantoo.
+Toutes les prestations des scènes officielles feront l’objet de captations
+qui seront diffusées plus tard sur les pages officielles de l’Escale Bantoo
+et des chaines de télévision partenaires
+                    </div>
+                </div>
+                <div class="img">
+                    <img class=" w-full rounded-xl" src="https://baselunaire.com/medias/comment-vendre-en-ligne.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class=" text-white bottom-0 left-0 w-full h-full bg-black bg-cover md:px-8 px-4 lg:px-16 py-28  ">
+        <div class="mx-8 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+        <div class="company-info">
+            <img src="../assets/cropped-Logo-Escale-Bantoo-2-1.png" alt="">
+            <!-- <div class="description text-gray-400 text-sm mt-5">
+
+            </div> -->
+            <div class="social-link flex items-center mt-3">
+            <p class="font-bold text-lg">Follow on:</p>
+            <a href="https://web.facebook.com/escalebantoo" class="ml-3 text-base text-white  hover:text-eb">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+                viewBox="0 0 16 16">
+                <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+            </a>
+            </div>
+        </div>
+        <div class="offices">
+            <h2 class="text-xl font-bold">Nous retrouver</h2>
+            <div class="location-info text-gray-400 mb-6 mt-5">
+            <div class="city text-white mb-2">Yaounde, Cameroun</div>
+            <p class=" mb-1">
+                Simbock-Yaoundé (lieu dit Carrefour Jouvence)
+            </p>
+            <div>
+                <span>Telephone</span>
+                <a href="#" class=" underline">+237 656 30 57 10</a>
+            </div>
+
+            <div>
+                <span>Whatsapp</span>
+                <a href="#" class=" underline">+237 657 55 16 24</a>
+            </div>
+            </div>
+        </div>
+        <div class="usefull-links">
+            <h2 class="text-xl font-bold">
+            Nos services
+            </h2>
+            <div class="grid mt-5 grid-cols-1 gap-3">
+            <ul class="text-gray-400 space-y-3">
+                <li>
+                <a href="#" class="capitalize hover:text-eb"> L'Escale bantoo</a>
+                </li>
+                <li>
+                <a href="#" class="capitalize hover:text-eb"> L'Escale Musique </a>
+                </li>
+                <li>
+                <a href="#" class="capitalize hover:text-eb">L'escale Bantoo global musique hub</a>
+                </li>
+                <li>
+                <a href="#" class="capitalize hover:text-eb"> Le salon de l'escale bantoo</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="right-element bg-black  text-white">
+            <h2 class="text-xl font-bold">Garder contact</h2>
+            <div class="element ">
+
+            <p class="desc-email text-gray-400 text-sm">
+                Souscrire a notre boite aux lettres
+            </p>
+            <form action="#" class="flex bg-black flex-wrap h-1">
+                <div class="emailField ">
+                <input type="email" name="" class="px-4 ring-0 focus:ring-eb text-lg py-1 text-black mt-2  outline-0"
+                    id="">
+                </div>
+                <div class="submit-btn  relative">
+                <button type="submit"
+                    class="w-36  md:mt-5 mt-2 font-bold relative px-4 py-2 capitalize bg-eb  text-white">
+                    Souscrire
+                </button>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="./event/app.js"></script>
+</body>
+</html>
