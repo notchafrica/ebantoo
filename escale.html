@@ -18,7 +18,8 @@
         extend: {
           backgroundImage: {
             'teaserBg': "url('https://folio.webestica.com/assets/images/about/05.jpg')",
-            'woodshape': "url('https://folio.webestica.com/assets/images/bg/pattern/05.png')"
+            'woodshape': "url('https://folio.webestica.com/assets/images/bg/pattern/05.png')",
+            'escale': "url('./assets/LE PROGRAMME.jpg')"
           },
           colors: {
             'eb': '#FF8E12',
@@ -33,7 +34,7 @@
 
 <body>
   <main class="mb-[47px] z-10 overflow-hidden bg-white block">
-    <header class="relative block">
+    <header class="relative block ">
       <nav class="
         z-50
         relative
@@ -93,9 +94,11 @@
           <a href="./edition.html" class="px-4 py-2 text-white bg-eb font-bold capitalize">L'edition 2023</a>
         </div>
       </nav>
-      <div class="relative left-0 z-50 grid w-full grid-cols-1 lg:absolute lg:w-2/5 md:w-3/5">
+      <div class="md:relative lg:left-0  grid lg:bg-none  bg-escale  bg-cover w-screen  grid-cols-1 lg:absolute lg:w-2/5 ">
+        <div class=" lg:bg-none bg-gradient-to-l from-transparent w-full h-full to-eb">
+          
         <div class="mx-4 my-20 text-3xl font-bold hero_text lg:mx-14 md:mx-7">
-          <div class="z-10 hero_title ">
+          <div class="z-30 hero_title  ">
             <div class="uppercase text-second leading-12">
               L’escale bantoo:
             </div>
@@ -108,6 +111,7 @@
               class="px-1 py-1 text-xs text-white bg-second lg:text-base md:text-sm lg:px-3 md:px-2 lg:py-2 md:py-1">Nous
               contacter</a>
           </div>
+        </div>
         </div>
       </div>
 
